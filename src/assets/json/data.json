@@ -1,0 +1,182 @@
+{
+  "Consommation_énergétique": {
+    "Chiffres_2020": {
+      "Discord": {
+        "Valeur": "500 000 kWh",
+        "Équivalences": {
+          "Éclairage_LED": {
+            "Heures": "50 millions",
+            "Années": "5 700 ans"
+          },
+          "Recharge_smartphone": {
+            "Nombre_de_charges": "33,3 millions"
+          },
+          "Douches": {
+            "Nombre_de_douches": 83300,
+            "Durée_par_douche": "10 minutes"
+          }
+        }
+      },
+      "Instagram": {
+        "Valeur": "13 344 000 kWh",
+        "Équivalences": {
+          "Éclairage_LED": {
+            "Heures": "1,33 milliards",
+            "Années": "114 000 ans"
+          },
+          "Recharge_smartphone": {
+            "Nombre_de_charges": "889,6 millions"
+          },
+          "Douches": {
+            "Nombre_de_douches": "2,67 millions",
+            "Durée_par_douche": "10 minutes"
+          }
+        }
+      },
+      "Facebook": {
+        "Valeur": "2 187 020 kWh",
+        "Équivalences": {
+          "Éclairage_LED": {
+            "Heures": "219 milliards",
+            "Années": "25 000 000 ans"
+          },
+          "Recharge_smartphone": {
+            "Nombre_de_charges": "219 milliards"
+          },
+          "Douches": {
+            "Nombre_de_douches": "1,1 milliard",
+            "Durée_par_douche": "10 minutes"
+          }
+        }
+      }
+    },
+    "Chiffres_2023": {
+      "Discord": {
+        "Valeur": "1 000 000 kWh",
+        "Équivalences": {
+          "Éclairage_LED": {
+            "Heures": "66,7 millions",
+            "Années": 5700
+          },
+          "Recharge_smartphone": {
+            "Nombre_de_charges": "100 millions"
+          },
+          "Douches": {
+            "Nombre_de_douches": "166 700",
+            "Durée_par_douche": "10 minutes"
+          }
+        }
+      },
+      "Instagram": {
+        "Valeur": "26 688 000 kWh",
+        "Équivalences": {
+          "Éclairage_LED": {
+            "Heures": "70 millions",
+            "Années": "114 000 ans"
+          },
+          "Recharge_smartphone": {
+            "Nombre_de_charges": "46,7 millions"
+          },
+          "Douches": {
+            "Nombre_de_douches": "166 700",
+            "Durée_par_douche": "10 minutes"
+          }
+        }
+      },
+      "Facebook": {
+        "Valeur": "14,98 TWh",
+        "Équivalences": {
+          "Éclairage_LED": {
+            "Heures": "1,498 trillion",
+            "Années": "114 000 ans"
+          },
+          "Recharge_smartphone": {
+            "Nombre_de_charges": "999 milliards"
+          },
+          "Douches": {
+            "Nombre_de_douches": "2 996 milliards",
+            "Durée_par_douche": "10 minutes"
+          }
+        }
+      }
+    }
+  },
+  "Nombre_utilisateurs": {
+    "Chiffres_2020": {
+      "Discord":{
+        "valeur": "100 000 000"
+      },
+      "Instagram":{
+        "valeur": "1 082 000 000"
+      },
+      "Facebook":{
+        "valeur": "2 800 000 000"
+      }
+    },
+    "Chiffres_2023": {
+      "Discord":{
+        "valeur": "200 000 000"
+      },
+      "Instagram":{
+        "valeur": "2 000 000 000"
+      },
+      "Facebook":{
+        "valeur": "3 070 000 000"
+      }
+    }
+  },
+  "Pollution_data_center": {
+    "Chiffres_2020": {
+      "Discord": {
+        "CO2": "300 000 Tonnes de CO2",
+        "Équivalences": {
+          "Tours_Terre_voiture": "62 500 tours",
+          "Vols_Paris_NewYork": 400,
+          "Steaks_300g": "22,2 millions"
+        }
+      },
+      "Instagram": {
+        "CO2": "14 100 000 Tonnes de CO2",
+        "Équivalences": {
+          "Tours_Terre_voiture": "2,93 millions de tours",
+          "Vols_Paris_NewYork": "8,29 millions",
+          "Steaks_300g": "1,04 millions"
+        }
+      },
+      "Facebook": {
+        "CO2": "200 000 Tonnes de CO2",
+        "Équivalences": {
+          "Tours_Terre_voiture": "41 579 tours",
+          "Vols_Paris_NewYork": "117 647",
+          "Steaks_300g": "14,8 millions"
+        }
+      }
+    },
+    "Chiffres_2023": {
+      "Discord": {
+        "CO2": "6 000 000 Tonnes de CO2",
+        "Équivalences": {
+          "Tours_Terre_voiture": "1,25 millions de tours",
+          "Vols_Paris_NewYork": "8 000",
+          "Steaks_300g": "444 millions"
+        }
+      },
+      "Instagram": {
+        "CO2": "14 070 000 Tonnes de CO2",
+        "Équivalences": {
+          "Tours_Terre_voiture": "62 500 tours",
+          "Vols_Paris_NewYork": "400",
+          "Steaks_300g": "22,2 millions"
+        }
+      },
+      "Facebook": {
+        "CO2": "50 610 Tonnes de CO2",
+        "Équivalences": {
+          "Tours_Terre_voiture": "10 529 tours",
+          "Vols_Paris_NewYork": "29 764",
+          "Steaks_300g": "3,75 millions"
+        }
+      }
+    }
+  }
+}
