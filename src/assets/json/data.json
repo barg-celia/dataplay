@@ -178,5 +178,170 @@
         }
       }
     }
-  }
+  },
+
+  "situations": [
+    {
+      "id": 1,
+      "question": "Tu vas sur Discord et tu te rends compte qu’il y à plusieurs serveurs inutilisés. Que fais-tu ?",
+      "options": {
+        "A": "Tu supprimes les serveurs inutiles.",
+        "B": "Tu ne fais rien car ce sont des souvenirs."
+      }
+    },
+    {
+      "id": 2,
+      "question": "Ton ami t'envoie une vidéo drôle. Comment réagis-tu ?",
+      "options": {
+        "A": "Tu réagis avec un smiley directement sur le message.",
+        "B": "Tu lui écris un message pour lui dire à quel point il est marrant."
+      }
+    },
+    {
+      "id": 3,
+      "question": "Tu souhaites envoyer le résumé du cours auquel ton ami n’à pas assisté.",
+      "options": {
+        "A": "Tu lui transfères dans sa forme d’origine.",
+        "B": "Tu compresses le document avant de l’envoyer."
+      }
+    },
+    {
+      "id": 4,
+      "question": "Tu viens d’arriver dans un nouveau Discord.",
+      "options": {
+        "A": "Tu actives toutes les notifications afin d’être sûr(e) de ne rien rater.",
+        "B": "Tu actives que les mentions."
+      }
+    },
+    {
+      "id": 5,
+      "question": "En faisant le tour du serveur que tu possèdes, tu te rends compte que plusieurs fichiers n’ont pas été utilisés depuis plusieurs mois.",
+      "options": {
+        "A": "Tu les archives ou les supprimes.",
+        "B": "Tu les laisses là, on ne sait jamais que quelqu’un en ait besoin dans le futur."
+      }
+    },
+    {
+      "id": 6,
+      "question": "Ta maman t'appelle pour aller faire une balade en forêt mais tu es occupé sur Discord.",
+      "options": {
+        "A": "Tu mets tout en veille.",
+        "B": "Tu fermes l’application Discord."
+      }
+    },
+    {
+      "id": 7,
+      "question": "Tu dois parler à un ami mais il ne te répond pas.",
+      "options": {
+        "A": "Tu le ping pleins de fois pour qu’il remarque enfin ton message.",
+        "B": "Tu le ping 1 fois et tu attends sa réponse."
+      }
+    },
+    {
+      "id": 8,
+      "question": "Vous décidez avec vos amis de faire une nuit de jeux vidéo.",
+      "options": {
+        "A": "Vous faites un appel avec vos caméras et les partages d’écrans afin que votre soirée soit plus interactive.",
+        "B": "Vous faites un simple appel vidéo.",
+        "C": "Vous faites juste un partage d’écran."
+      }
+    },
+    {
+      "id": 9,
+      "question": "Tu décides de mettre des rôles aux membres de ton serveur afin de donner des accès à certaines discussions.",
+      "options": {
+        "A": "Tu donnes plusieurs rôles à chaque personne.",
+        "B": "Tu généralises les rôles afin de limiter le nombre de rôles."
+      }
+    },
+    {
+      "id": 10,
+      "question": "Tu rentres chez toi en hiver, après une journée d’école.",
+      "options": {
+        "A": "Tu passes en mode sombre pour limiter l’impact sur tes yeux.",
+        "B": "Tu restes avec une luminosité normale afin de garder le côté lumineux qui te manque vu le temps dehors."
+      }
+    },
+    {
+      "id": 11,
+      "question": "Tu tombes sur une publication drôle que tu veux partager avec un ami.",
+      "options": {
+        "A": "Tu le mentionnes en commentaire.",
+        "B": "Tu lui envoies en privé."
+      }
+    },
+    {
+      "id": 12,
+      "question": "Ton meilleur ami fête son anniversaire.",
+      "options": {
+        "A": "Tu lui souhaites sur son feed.",
+        "B": "Tu lui souhaites en message privé.",
+        "C": "Tu lui fais une story."
+      }
+    },
+    {
+      "id": 13,
+      "question": "Tu dois envoyer un fichier à plusieurs amis.",
+      "options": {
+        "A": "Tu l’envoies individuellement à chacun d’eux.",
+        "B": "Tu crées un lien de partage unique pour éviter les envois multiples."
+      }
+    },
+    {
+      "id": 14,
+      "question": "Tu dois envoyer un message à un ami.",
+      "options": {
+        "A": "Tu envoies plusieurs petits messages séparés.",
+        "B": "Tu regroupes tes idées dans un seul message."
+      }
+    },
+    {
+      "id": 15,
+      "question": "Tu veux poster une photo de tes vacances.",
+      "options": {
+        "A": "Tu retouches ta photo avec plusieurs applications avant de la poster en haute qualité.",
+        "B": "Tu publies ta photo sans retouches excessives et en qualité optimisée."
+      }
+    },
+    {
+      "id": 16,
+      "question": "Tu veux montrer à tes amis une publication intéressante.",
+      "options": {
+        "A": "Tu fais une capture d’écran et l'envoie en DM.",
+        "B": "Tu utilises la fonction 'Partager en message' d’Instagram."
+      }
+    },
+    {
+      "id": 17,
+      "question": "Tu veux publier une photo sur ton profil.",
+      "options": {
+        "A": "Tu publies l’album entier avec 50 photos en haute qualité.",
+        "B": "Tu sélectionnes seulement les 2-3 meilleures photos."
+      }
+    },
+    {
+      "id": 18,
+      "question": "Tu es abonné(e) à de nombreuses pages/groupes qui ne t’intéressent plus.",
+      "options": {
+        "A": "Tu restes abonné(e) par habitude.",
+        "B": "Tu fais régulièrement le tri pour ne garder que l’essentiel."
+      }
+    },
+    {
+      "id": 19,
+      "question": "Tu veux regarder un tutoriel sur YouTube/TikTok/Instagram.",
+      "options": {
+        "A": "Tu regardes la vidéo en haute qualité même sur un petit écran.",
+        "B": "Tu ajustes la qualité selon ton appareil pour économiser des données."
+      }
+    },
+    {
+      "id": 20,
+      "question": "Un ami fait un live sur Twitch/Instagram/Facebook.",
+      "options": {
+        "A": "Tu le laisses tourner en arrière-plan même si tu ne regardes pas vraiment.",
+        "B": "Tu regardes activement et quittes dès que ça ne t’intéresse plus."
+      }
+    }
+  ]
 }
