@@ -26,13 +26,16 @@ h3{
     margin-left: 50px;
 }
 
-.img--background{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    z-index: -10;
+.img--background {
+    position: fixed;  /* Fixe l'image en arrière-plan */
+    top: 0;
+    left: 0;
+    width: 100vw;  /* Largeur = 100% de la fenêtre */
+    height: 100vh; /* Hauteur = 100% de la fenêtre */
+    object-fit: cover; /* Couvre toute la zone sans déformation */
+    z-index: -1; /* Place l'image derrière les autres éléments */
 }
+
 
 .img--section2{
     top: 845px;
