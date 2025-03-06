@@ -134,6 +134,9 @@ button{
     background-color: rgb(185, 189, 189);
     width: 800px;
     height: 500px;
+    display: flex;
+    justify-content: space-between; /* Aligne les boutons sur la même ligne */
+    gap: 10px;
 }
 
 .grid--div{
@@ -147,7 +150,7 @@ button{
 }
 
 .btn--suivant {
-    margin-top: 150px;
+    margin-top: 120px;
     padding: 10px 20px;
     background-color: white;
     color: black;
@@ -209,20 +212,29 @@ button{
     transition: width 0.3s ease-in-out;
 }
 
-.btn--conso{
-    opacity: 1;
-    width: 250px;
-}
-.btn--utili{
-    opacity: 1;
-    width: 250px;
-}
-.btn--poll{
-    opacity: 1;
-    width: 250px;
-}
-
 .option-btn{
     color: white;
     opacity: 1;
 }
+
+.grid--section2 {
+    display: flex;
+    gap: 10px;
+  }
+
+.btn--conso, .btn--utili, .btn--poll {
+    padding: 10px 20px;
+    background-color: #6b6b6b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+    width: 250px;
+    height: 40px;
+}
+
+#data-container {
+    margin-top: 20px;
+}
+
+  

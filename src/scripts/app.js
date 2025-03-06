@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
             
         `;
 
-        // Réattacher l'événement du bouton "Suivant"
+        // Réattacher l'événement du bouton "prochain"
         document.querySelector(".btn--prochain").addEventListener("click", function () {
             currentQuestionIndex++; // Passer à la question suivante
             if (currentQuestionIndex < totalQuestions) {
@@ -118,3 +118,76 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+
+// Récupérer les données JSON depuis le fichier
+fetch('assets/json/data.json')
+  .then(response => response.json())
+  .then(data => {
+    // Ajouter un gestionnaire d'événements pour chaque bouton
+    document.querySelector('.btn--conso').addEventListener('click', () => displayEnergyConsumption(data));
+    document.querySelector('.btn--utili').addEventListener('click', () => displayUserCount(data));
+    document.querySelector('.btn--poll').addEventListener('click', () => displayPollution(data));
+  })
+  .catch(error => {
+    console.error('Erreur lors du chargement des données:', error);
+  });
+
+// Fonction pour afficher la consommation énergétique
+function displayEnergyConsumption(data) {
+  let html = '';
+  for (let year in data.Consommation_énergétique) {
+    html += `<h2>Consommation énergétique - ${year}</h2>`;
+    for (let platform in data.Consommation_énergétique[year]) {
+      const platformData = data.Consommation_énergétique[year][platform];
+      html += `
+        <h3>${platform}</h3>
+        <p>${platformData.Valeur}</p>
+        <p>Équivalences:</p>
+        <ul>
+          <li>Recharger ${platformData.Équivalences.Recharge_smartphone.Nombre_de_charges} de fois un smarphones en charge complète</li> Ou
+          <li>Prendre ${platformData.Équivalences.Douches.Nombre_de_douches} douches de ${platformData.Équivalences.Douches.Durée_par_douche}</li>
+        </ul>
+      `;
+    }
+  }
+  document.getElementById('data-container').innerHTML = html;
+}
+
+// Fonction pour afficher le nombre d'utilisateurs
+function displayUserCount(data) {
+  let html = '';
+  for (let year in data.Nombre_utilisateurs) {
+    html += `<h2>Nombre d'utilisateurs - ${year}</h2>`;
+    for (let platform in data.Nombre_utilisateurs[year]) {
+      const platformData = data.Nombre_utilisateurs[year][platform];
+      html += `
+        <h3>${platform}</h3>
+        <p>Nombre d'utilisateurs: ${platformData.valeur}</p>
+      `;
+    }
+  }
+  document.getElementById('data-container').innerHTML = html;
+}
+
+// Fonction pour afficher la pollution
+function displayPollution(data) {
+  let html = '';
+  for (let year in data.Pollution_data_center) {
+    html += `<h2>Pollution due aux data centers - ${year}</h2>`;
+    for (let platform in data.Pollution_data_center[year]) {
+      const platformData = data.Pollution_data_center[year][platform];
+      html += `
+        <h3>${platform}</h3>
+        <p>${platformData.CO2} émis</p>
+        <p>Équivalences:</p>
+        <ul>
+          <li>${platformData.Équivalences.Tours_Terre_voiture}Tours de la Terre en voiture</li>Ou 
+          <li>${platformData.Équivalences.Steaks_300g} de steaks 300g </li>
+        </ul>
+      `;
+    }
+  }
+  document.getElementById('data-container').innerHTML = html;
+}
