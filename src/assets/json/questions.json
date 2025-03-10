@@ -1,4 +1,4 @@
-{"questions": [
+{"discord": [
     {
       "id": 1,
       "question": "Combien de temps passes-tu sur Discord chaque jour ?",
@@ -46,7 +46,7 @@
         "A": "Serveurs de jeu",
         "B": "Serveurs de discussion générale",
         "C": "Serveurs d’étude ou de travail",
-        "D": "Autre (préciser)"
+        "D": "Serveurs de musiques"
       }
     },
     {
@@ -195,5 +195,98 @@
         "D": "Jamais"
       }
     }
-]
+ ],
+ "Instagram": [
+    {
+      "id": 1,
+      "question": "Combien de temps passes-tu sur Instagram chaque jour ?",
+      "options": {
+        "A": "Moins de 30 minutes",
+        "B": "30 minutes à 1 heure",
+        "C": "1 à 2 heures",
+        "D": "Plus de 2 heures"
+      }
+    },
+    {
+      "id": 2,
+      "question": "A quelle fréquence consultes-tu tes notifications Instagram après les avoir reçues ",
+      "options": {
+        "A": "Immédiatement",
+        "B": "Après 30 minutes",
+        "C": "Après 1h",
+        "D": "Plus d’une heure"
+      }
+    },
+    {
+      "id": 3,
+      "question": "Combien suis-tu de compte instagram ?",
+      "options": {
+        "A": "Moins de 150",
+        "B": "150 à 300",
+        "C": "300 à 500",
+        "D": "Plus de 500"
+      }
+    },
+    {
+      "id": 4,
+      "question": "Utilises-tu souvent les emojis ou les réactions sur Instagram ?",
+      "options": {
+        "A": "Toujours",
+        "B": "Souvent",
+        "C": "Parfois",
+        "D": "Jamais"
+      }
+    },
+    {
+      "id": 5,
+      "question": "Quel type de contenu préfères-tu consulter sur instagram ?",
+      "options": {
+        "A": "Photos",
+        "B": "Vidéos",
+        "C": "Story",
+        "D": "Lives"
+      }
+    },
+    {
+      "id": 6,
+      "question": "As-tu déjà désactivé des notifications pour certains compte instagram ?",
+      "options": {
+        "A": "Oui, pour tous mes compte",
+        "B": "Oui, mais seulement pour certains compte",
+        "C": "Non, jamais"
+      }
+    },
+    {
+      "id": 7,
+      "question": "Combien de publications publies-tu sur Instagram par semaine?",
+      "options": {
+        "A": "Moins de 2",
+        "B": "2 à 5",
+        "C": "5 à 10",
+        "D": "Plus de 10"
+      }
+    }
+  ],
+  "Facebook": [
+    {
+      "id": 1,
+      "question": "Combien de temps passes-tu sur Instagram chaque jour ?",
+      "options": {
+        "A": "Moins de 30 minutes",
+        "B": "30 minutes à 1 heure",
+        "C": "1 à 2 heures",
+        "D": "Plus de 2 heures"
+      }
+    },
+    {
+      "id": 2,
+      "question": "A quelle fréquence consultes-tu tes notifications Facebook après les avoir reçues ",
+      "options": {
+        "A": "Immédiatement",
+        "B": "Après 30 minutes",
+        "C": "Après 1h",
+        "D": "Plus d’une heure"
+      }
+    }
+  ]
 }
