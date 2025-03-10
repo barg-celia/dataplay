@@ -265,12 +265,128 @@
         "C": "5 à 10",
         "D": "Plus de 10"
       }
+    },
+    {
+      "id": 8,
+      "question": "Utilises-tu Instagram principalement sur ton téléphone ou sur ton PC ?",
+      "options": {
+        "A": "Sur mon téléphone",
+        "B": "Sur mon PC",
+        "C": "Les deux de manière égale"
+      }
+    },
+    {
+      "id": 9,
+      "question": "Combien de fois par jour vérifies-tu les notifications sur Instagram ?",
+      "options": {
+        "A": "Très souvent (plus de 10 fois)",
+        "B": "Assez souvent (5 à 10 fois)",
+        "C": "Rarement (1 à 5 fois)",
+        "D": "Jamais"
+      }
+    },
+    {
+      "id": 10,
+      "question": "Es-tu un utilisateur actif des stories ou des vidéos en direct sur Instagram ?",
+      "options": {
+        "A": "Actif des stories",
+        "B": "Acitf des vidéos en direct"
+      }
+    },
+    {
+      "id": 11,
+      "question": "As-tu déjà désactivé la lecture automatique des vidéos sur Instagram  ?",
+      "options": {
+        "A": "Oui",
+        "B": "Non"
+      }
+    },
+    {
+      "id": 12,
+      "question": "Quel type de contenu préfères-tu liker :",
+      "options": {
+        "A": "Photos",
+        "B": "Vidéos"
+      }
+    },
+    {
+      "id": 13,
+      "question": "As-tu un abonnement payant ?",
+      "options": {
+        "A": "Oui",
+        "B": "Non"
+      }
+    },
+    {
+      "id": 14,
+      "question": "Es-tu créateur de contenu ?",
+      "options": {
+        "A": "Oui",
+        "B": "Non"
+      }
+    },
+    {
+      "id": 15,
+      "question": "Combien de fois par jour regardes-tu des vidéos sur instagram ?",
+      "options": {
+        "A": "Moins de 10 fois",
+        "B": "Entre 10 et 20 fois",
+        "C": "Entre 20 fois et 40 fois",
+        "D": "Plus de 40 fois"
+      }
+    },
+    {
+      "id": 16,
+      "question": "Est-ce que tu partages des publications d'autres utilisateurs sur Instagram ?",
+      "options": {
+        "A": "Oui, très souvent",
+        "B": "Parfois",
+        "C": "Rarement",
+        "D": "Jamais"
+      }
+    },
+    {
+      "id": 17,
+      "question": "Utilises-tu Instagram pour passer des appels vidéo ?",
+      "options": {
+        "A": "Oui",
+        "B": "Non"
+      }
+    },
+    {
+      "id": 18,
+      "question": "Quel type de contenu préfères-tu poster sur instagram ?",
+      "options": {
+        "A": "Photos",
+        "B": "Vidéos",
+        "C": "Story"
+      }
+    },
+    {
+      "id": 19,
+      "question": "Est-ce que tu réduit la taille des tes fichiers (photos/vidéos) avant des les publier ?",
+      "options": {
+        "A": "Oui, très souvent",
+        "B": "Parfois",
+        "C": "Rarement",
+        "D": "Jamais"
+      }
+    },
+    {
+      "id": 20,
+      "question": "À quelle fréquence commentes-tu ou likes-tu des publications sur Instagram ?",
+      "options":{
+        "A": "Oui, très souvent",
+        "B": "Parfois",
+        "C": "Rarement",
+        "D": "Jamais"
+      }
     }
   ],
   "Facebook": [
     {
       "id": 1,
-      "question": "Combien de temps passes-tu sur Instagram chaque jour ?",
+      "question": "Combien de temps passes-tu sur Facebook chaque jour ?",
       "options": {
         "A": "Moins de 30 minutes",
         "B": "30 minutes à 1 heure",
@@ -280,12 +396,41 @@
     },
     {
       "id": 2,
-      "question": "A quelle fréquence consultes-tu tes notifications Facebook après les avoir reçues ",
+      "question": "À quelle fréquence consultes-tu tes notifications Facebook après les avoir reçues ?",
       "options": {
         "A": "Immédiatement",
         "B": "Après 30 minutes",
         "C": "Après 1h",
         "D": "Plus d’une heure"
+      }
+    },
+    {
+      "id": 3,
+      "question": "Es-tu membre de plusieurs groupes sur Facebook ?",
+      "options": {
+        "A": "Un seul",
+        "B": "Plusieurs",
+        "C": "Aucun"
+      }
+    },
+    {
+      "id": 4,
+      "question": "Utilises-tu souvent les emojis ou les réactions sur Facebook ?",
+      "options": {
+        "A": "Toujours",
+        "B": "Souvent",
+        "C": "Parfois",
+        "D": "Jamais"
+      }
+    },
+    {
+      "id": 5,
+      "question": "Quel type de contenu préfères-tu consulter sur Facebook ?",
+      "options": {
+        "A": "Photos",
+        "B": "Vidéos",
+        "C": "Story",
+        "D": "Direct"
       }
     }
   ]
