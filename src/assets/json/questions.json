@@ -1,389 +1,608 @@
 {"discord": [
-    {
-      "id": 1,
-      "question": "Combien de temps passes-tu sur Discord chaque jour ?",
-      "options": {
-        "A": "Moins de 30 minutes",
-        "B": "30 minutes à 1 heure",
-        "C": "1 à 2 heures",
-        "D": "Plus de 2 heures"
-      }
+  {
+    "id": 1,
+    "question": "Combien de temps passes-tu sur Discord chaque jour ?",
+    "options": {
+      "A": "Moins de 30 minutes",
+      "B": "30 minutes à 1 heure",
+      "C": "1 à 2 heures",
+      "D": "Plus de 2 heures"
     },
-    {
-      "id": 2,
-      "question": "A quelle fréquence consultes-tu tes notifications Discord après les avoir reçues ?",
-      "options": {
-        "A": "Immédiatement",
-        "B": "Après 30 minutes",
-        "C": "Après 1h",
-        "D": "Plus d’une heure"
-      }
-    },
-    {
-      "id": 3,
-      "question": "De combien de serveurs Discord es-tu membre ?",
-      "options": {
-        "A": "Moins de 5",
-        "B": "5 à 20",
-        "C": "20 à 50",
-        "D": "Plus de 50"
-      }
-    },
-    {
-      "id": 4,
-      "question": "Utilises-tu souvent les emojis ou les réactions sur Discord ?",
-      "options": {
-        "A": "Toujours",
-        "B": "Souvent",
-        "C": "Parfois",
-        "D": "Jamais"
-      }
-    },
-    {
-      "id": 5,
-      "question": "Quel type de serveur Discord utilises-tu principalement ?",
-      "options": {
-        "A": "Serveurs de jeu",
-        "B": "Serveurs de discussion générale",
-        "C": "Serveurs d’étude ou de travail",
-        "D": "Serveurs de musiques"
-      }
-    },
-    {
-      "id": 6,
-      "question": "As-tu déjà désactivé des notifications pour certains serveurs Discord ?",
-      "options": {
-        "A": "Oui, pour tous mes serveurs",
-        "B": "Oui, mais seulement pour certains serveurs",
-        "C": "Non, jamais"
-      }
-    },
-    {
-      "id": 7,
-      "question": "Combien de personnes as-tu dans ta liste d'amis sur Discord ?",
-      "options": {
-        "A": "Moins de 10",
-        "B": "10 à 50",
-        "C": "50 à 100",
-        "D": "Plus de 100"
-      }
-    },
-    {
-      "id": 8,
-      "question": "Utilises-tu Discord principalement sur ton téléphone ou sur ton PC ?",
-      "options": {
-        "A": "Sur mon téléphone",
-        "B": "Sur mon PC",
-        "C": "Les deux de manière égale"
-      }
-    },
-    {
-      "id": 9,
-      "question": "Combien de fois par jour vérifies-tu les notifications sur Discord ?",
-      "options": {
-        "A": "Très souvent (plus de 10 fois)",
-        "B": "Assez souvent (5 à 10 fois)",
-        "C": "Rarement (1 à 5 fois)",
-        "D": "Jamais"
-      }
-    },
-    {
-      "id": 10,
-      "question": "As-tu l’habitude de rejoindre des discussions vocales sur Discord ?",
-      "options": {
-        "A": "Toujours",
-        "B": "Souvent",
-        "C": "Parfois",
-        "D": "Jamais"
-      }
-    },
-    {
-      "id": 11,
-      "question": "Est-ce que tu utilises souvent des bots sur les serveurs Discord ?",
-      "options": {
-        "A": "Oui, tout le temps",
-        "B": "Parfois",
-        "C": "Rarement",
-        "D": "Jamais"
-      }
-    },
-    {
-      "id": 12,
-      "question": "Es-tu plus actif dans des discussions textuelles ou vocales sur Discord ?",
-      "options": {
-        "A": "Discussions textuelles",
-        "B": "Discussions vocales",
-        "C": "Les deux de manière égale"
-      }
-    },
-    {
-      "id": 13,
-      "question": "Utilises-tu souvent le mode 'Ne pas déranger' sur Discord ?",
-      "options": {
-        "A": "Oui, tout le temps",
-        "B": "Parfois",
-        "C": "Rarement",
-        "D": "Jamais"
-      }
-    },
-    {
-      "id": 14,
-      "question": "Combien de serveurs Discord as-tu créés ou administrés ?",
-      "options": {
-        "A": "Aucun",
-        "B": "1 à 5",
-        "C": "5 à 10",
-        "D": "Plus de 10"
-      }
-    },
-    {
-      "id": 15,
-      "question": "Est-ce que tu partages fréquemment des fichiers ou des images dans les salons Discord ?",
-      "options": {
-        "A": "Toujours",
-        "B": "Souvent",
-        "C": "Parfois",
-        "D": "Jamais"
-      }
-    },
-    {
-      "id": 16,
-      "question": "As-tu déjà rencontré un problème de confidentialité sur Discord ?",
-      "options": {
-        "A": "Oui, plusieurs fois",
-        "B": "Oui, une fois",
-        "C": "Non, jamais"
-      }
-    },
-    {
-      "id": 17,
-      "question": "Combien de messages en moyenne envoies-tu sur Discord chaque jour ?",
-      "options": {
-        "A": "Moins de 10",
-        "B": "10 à 50",
-        "C": "50 à 100",
-        "D": "Plus de 100"
-      }
-    },
-    {
-      "id": 18,
-      "question": "Utilises-tu des applications tierces pour personnaliser ton expérience sur Discord ?",
-      "options": {
-        "A": "Oui, régulièrement",
-        "B": "Parfois",
-        "C": "Rarement",
-        "D": "Jamais"
-      }
-    },
-    {
-      "id": 19,
-      "question": "Est-ce que tu utilises Discord pour des raisons professionnelles ou scolaires ?",
-      "options": {
-        "A": "Oui, très souvent",
-        "B": "Parfois",
-        "C": "Rarement",
-        "D": "Jamais"
-      }
-    },
-    {
-      "id": 20,
-      "question": "As-tu l’habitude de rejoindre des discussions vidéo sur Discord ?",
-      "options": {
-        "A": "Toujours",
-        "B": "Souvent",
-        "C": "Parfois",
-        "D": "Jamais"
-      }
+    "impact": {
+      "A": 228.125,
+      "B": 456.25,
+      "C": 912.5,
+      "D": 1095
     }
+  },
+  {
+    "id": 2,
+    "question": "A quelle fréquence consultes-tu tes notifications Discord après les avoir reçues ?",
+    "options": {
+      "A": "Immédiatement",
+      "B": "Après 30 minutes",
+      "C": "Après 1 heure",
+      "D": "Plus d’une heure"
+    },
+    "impact": {
+      "A": 456.25,
+      "B": 273.75,
+      "C": 228.125,
+      "D": 136.875
+    }
+  },
+  {
+    "id": 3,
+    "question": "De combien de serveurs Discord es-tu membre ?",
+    "options": {
+      "A": "Moins de 5",
+      "B": "5 à 20",
+      "C": "20 à 50",
+      "D": "Plus de 50"
+    },
+    "impact": {
+      "A": 273.75,
+      "B": 547.5,
+      "C": 912.5,
+      "D": 1095
+    }
+  },
+  {
+    "id": 4,
+    "question": "Utilises-tu souvent les emojis ou les réactions sur Discord ?",
+    "options": {
+      "A": "Toujours",
+      "B": "Souvent",
+      "C": "Parfois",
+      "D": "Jamais"
+    },
+    "impact": {
+      "A": 456.25,
+      "B": 318.75,
+      "C": 228.125,
+      "D": 136.875
+    }
+  },
+  {
+    "id": 5,
+    "question": "Quel type de serveur Discord utilises-tu principalement ?",
+    "options": {
+      "A": "Serveurs de jeu",
+      "B": "Serveurs de discussion générale",
+      "C": "Serveurs d’étude ou de travail"
+    },
+    "impact": {
+      "A": 639.375,
+      "B": 456.25,
+      "C": 318.75
+    }
+  },
+  {
+    "id": 6,
+    "question": "As-tu déjà désactivé des notifications pour certains serveurs Discord ?",
+    "options": {
+      "A": "Oui, pour tous mes serveurs",
+      "B": "Oui, mais seulement pour certains serveurs",
+      "C": "Non, jamais"
+    },
+    "impact": {
+      "A": 136.875,
+      "B": 273.75,
+      "C": 456.25
+    }
+  },
+  {
+    "id": 7,
+    "question": "Combien de personnes as-tu dans ta liste d'amis sur Discord ?",
+    "options": {
+      "A": "Moins de 10",
+      "B": "10 à 50",
+      "C": "50 à 100",
+      "D": "Plus de 100"
+    },
+    "impact": {
+      "A": 228.125,
+      "B": 456.25,
+      "C": 639.375,
+      "D": 730
+    }
+  },
+  {
+    "id": 8,
+    "question": "Utilises-tu Discord principalement sur ton téléphone ou sur ton PC ?",
+    "options": {
+      "A": "Sur mon téléphone",
+      "B": "Sur mon PC",
+      "C": "Les deux de manière égale"
+    },
+    "impact": {
+      "A": 456.25,
+      "B": 639.375,
+      "C": 639.375
+    }
+  },
+  {
+    "id": 9,
+    "question": "Combien de fois par jour vérifies-tu les notifications sur Discord ?",
+    "options": {
+      "A": "Très souvent (plus de 10 fois)",
+      "B": "Assez souvent (5 à 10 fois)",
+      "C": "Rarement (1 à 5 fois)",
+      "D": "Jamais"
+    },
+    "impact": {
+      "A": 912.5,
+      "B": 547.5,
+      "C": 273.75,
+      "D": 136.875
+    }
+  },
+  {
+    "id": 10,
+    "question": "As-tu l’habitude de rejoindre des discussions vocales sur Discord ?",
+    "options": {
+      "A": "Toujours",
+      "B": "Souvent",
+      "C": "Parfois",
+      "D": "Jamais"
+    },
+    "impact": {
+      "A": 912.5,
+      "B": 547.5,
+      "C": 228.125,
+      "D": 136.875
+    }
+  },
+  {
+    "id": 11,
+    "question": "Est-ce que tu utilises souvent des bots sur les serveurs Discord ?",
+    "options": {
+      "A": "Oui, tout le temps",
+      "B": "Parfois",
+      "C": "Rarement",
+      "D": "Jamais"
+    },
+    "impact": {
+      "A": 639.375,
+      "B": 456.25,
+      "C": 273.75,
+      "D": 136.875
+    }
+  },
+  {
+    "id": 12,
+    "question": "Es-tu plus actif dans des discussions textuelles ou vocales sur Discord ?",
+    "options": {
+      "A": "Discussions textuelles",
+      "B": "Discussions vocales",
+      "C": "Les deux de manière égale"
+    },
+    "impact": {
+      "A": 456.25,
+      "B": 639.375,
+      "C": 639.375
+    }
+  },
+  {
+    "id": 13,
+    "question": "Utilises-tu souvent le mode \"Ne pas déranger\" sur Discord ?",
+    "options": {
+      "A": "Oui, tout le temps",
+      "B": "Parfois",
+      "C": "Rarement",
+      "D": "Jamais"
+    },
+    "impact": {
+      "A": 273.75,
+      "B": 456.25,
+      "C": 639.375,
+      "D": 912.5
+    }
+  },
+  {
+    "id": 14,
+    "question": "Combien de serveurs Discord as-tu créés ou administrés ?",
+    "options": {
+      "A": "Aucun",
+      "B": "1 à 5",
+      "C": "5 à 10",
+      "D": "Plus de 10"
+    },
+    "impact": {
+      "A": 273.75,
+      "B": 456.25,
+      "C": 639.375,
+      "D": 912.5
+    }
+  },
+  {
+    "id": 15,
+    "question": "Est-ce que tu partages fréquemment des fichiers ou des images dans les salons Discord ?",
+    "options": {
+      "A": "Toujours",
+      "B": "Souvent",
+      "C": "Parfois",
+      "D": "Jamais"
+    },
+    "impact": {
+      "A": 912.5,
+      "B": 639.375,
+      "C": 318.75,
+      "D": 136.875
+    }
+  },
+  {
+    "id": 16,
+    "question": "As-tu déjà rencontré un problème de confidentialité sur Discord ?",
+    "options": {
+      "A": "Oui, plusieurs fois",
+      "B": "Oui, une fois",
+      "C": "Non, jamais"
+    },
+    "impact": {
+      "A": 136.875,
+      "B": 273.75,
+      "C": 0
+    }
+  },
+  {
+    "id": 17,
+    "question": "Combien de messages en moyenne envoies-tu sur Discord chaque jour ?",
+    "options": {
+      "A": "Moins de 10",
+      "B": "10 à 50",
+      "C": "50 à 100",
+      "D": "Plus de 100"
+    },
+    "impact": {
+      "A": 273.75,
+      "B": 456.25,
+      "C": 639.375,
+      "D": 912.5
+    }
+  },
+  {
+    "id": 18,
+    "question": "Utilises-tu des applications tierces pour personnaliser ton expérience sur Discord ?",
+    "options": {
+      "A": "Oui, régulièrement",
+      "B": "Parfois",
+      "C": "Rarement",
+      "D": "Jamais"
+    },
+    "impact": {
+      "A": 639.375,
+      "B": 456.25,
+      "C": 318.75,
+      "D": 182.5
+    }
+  },
+  {
+    "id": 19,
+    "question": "Est-ce que tu utilises Discord pour des raisons professionnelles ou scolaires ?",
+    "options": {
+      "A": "Oui, très souvent",
+      "B": "Parfois",
+      "C": "Rarement",
+      "D": "Jamais"
+    },
+    "impact": {
+      "A": 639.375,
+      "B": 456.25,
+      "C": 318.75,
+      "D": 228.125
+    }
+  },
+  {
+    "id": 20,
+    "question": "As-tu l’habitude de rejoindre des discussions vidéo sur Discord ?",
+    "options": {
+      "A": "Toujours",
+      "B": "Souvent",
+      "C": "Parfois",
+      "D": "Jamais"
+    },
+    "impact": {
+      "A": 912.5,
+      "B": 639.375,
+      "C": 456.25,
+      "D": 136.875
+    }
+  }
  ],
 
 
  "Instagram": [
-    {
-      "id": 1,
-      "question": "Combien de temps passes-tu sur Instagram chaque jour ?",
-      "options": {
-        "A": "Moins de 30 minutes",
-        "B": "30 minutes à 1 heure",
-        "C": "1 à 2 heures",
-        "D": "Plus de 2 heures"
-      }
+  {
+    "id": 1,
+    "question": "Combien de temps passes-tu sur Instagram chaque jour ?",
+    "options": {
+      "A": "Moins de 30 minutes",
+      "B": "30 minutes à 1 heure",
+      "C": "1 à 2 heures",
+      "D": "Plus de 2 heures"
     },
-    {
-      "id": 2,
-      "question": "A quelle fréquence consultes-tu tes notifications Instagram après les avoir reçues ",
-      "options": {
-        "A": "Immédiatement",
-        "B": "Après 30 minutes",
-        "C": "Après 1h",
-        "D": "Plus d’une heure"
-      }
-    },
-    {
-      "id": 3,
-      "question": "Combien suis-tu de compte instagram ?",
-      "options": {
-        "A": "Moins de 150",
-        "B": "150 à 300",
-        "C": "300 à 500",
-        "D": "Plus de 500"
-      }
-    },
-    {
-      "id": 4,
-      "question": "Utilises-tu souvent les emojis ou les réactions sur Instagram ?",
-      "options": {
-        "A": "Toujours",
-        "B": "Souvent",
-        "C": "Parfois",
-        "D": "Jamais"
-      }
-    },
-    {
-      "id": 5,
-      "question": "Quel type de contenu préfères-tu consulter sur instagram ?",
-      "options": {
-        "A": "Photos",
-        "B": "Vidéos",
-        "C": "Story",
-        "D": "Lives"
-      }
-    },
-    {
-      "id": 6,
-      "question": "As-tu déjà désactivé des notifications pour certains compte instagram ?",
-      "options": {
-        "A": "Oui, pour tous mes compte",
-        "B": "Oui, mais seulement pour certains compte",
-        "C": "Non, jamais"
-      }
-    },
-    {
-      "id": 7,
-      "question": "Combien de publications publies-tu sur Instagram par semaine?",
-      "options": {
-        "A": "Moins de 2",
-        "B": "2 à 5",
-        "C": "5 à 10",
-        "D": "Plus de 10"
-      }
-    },
-    {
-      "id": 8,
-      "question": "Utilises-tu Instagram principalement sur ton téléphone ou sur ton PC ?",
-      "options": {
-        "A": "Sur mon téléphone",
-        "B": "Sur mon PC",
-        "C": "Les deux de manière égale"
-      }
-    },
-    {
-      "id": 9,
-      "question": "Combien de fois par jour vérifies-tu les notifications sur Instagram ?",
-      "options": {
-        "A": "Très souvent (plus de 10 fois)",
-        "B": "Assez souvent (5 à 10 fois)",
-        "C": "Rarement (1 à 5 fois)",
-        "D": "Jamais"
-      }
-    },
-    {
-      "id": 10,
-      "question": "Es-tu un utilisateur actif des stories ou des vidéos en direct sur Instagram ?",
-      "options": {
-        "A": "Actif des stories",
-        "B": "Acitf des vidéos en direct"
-      }
-    },
-    {
-      "id": 11,
-      "question": "As-tu déjà désactivé la lecture automatique des vidéos sur Instagram  ?",
-      "options": {
-        "A": "Oui",
-        "B": "Non"
-      }
-    },
-    {
-      "id": 12,
-      "question": "Quel type de contenu préfères-tu liker :",
-      "options": {
-        "A": "Photos",
-        "B": "Vidéos"
-      }
-    },
-    {
-      "id": 13,
-      "question": "As-tu un abonnement payant sur Instagram ?",
-      "options": {
-        "A": "Oui",
-        "B": "Non"
-      }
-    },
-    {
-      "id": 14,
-      "question": "Es-tu créateur de contenu ?",
-      "options": {
-        "A": "Oui",
-        "B": "Non"
-      }
-    },
-    {
-      "id": 15,
-      "question": "Combien de fois par jour regardes-tu des vidéos sur instagram ?",
-      "options": {
-        "A": "Moins de 10 fois",
-        "B": "Entre 10 et 20 fois",
-        "C": "Entre 20 fois et 40 fois",
-        "D": "Plus de 40 fois"
-      }
-    },
-    {
-      "id": 16,
-      "question": "Est-ce que tu partages des publications sur Instagram ?",
-      "options": {
-        "A": "Oui, très souvent",
-        "B": "Parfois",
-        "C": "Rarement",
-        "D": "Jamais"
-      }
-    },
-    {
-      "id": 17,
-      "question": "Utilises-tu Instagram pour passer des appels vidéo ?",
-      "options": {
-        "A": "Oui",
-        "B": "Non"
-      }
-    },
-    {
-      "id": 18,
-      "question": "Quel type de contenu préfères-tu poster sur instagram ?",
-      "options": {
-        "A": "Photos",
-        "B": "Vidéos",
-        "C": "Story"
-      }
-    },
-    {
-      "id": 19,
-      "question": "Est-ce que tu réduit la taille des tes fichiers (photos/vidéos) avant des les publier ?",
-      "options": {
-        "A": "Oui, très souvent",
-        "B": "Parfois",
-        "C": "Rarement",
-        "D": "Jamais"
-      }
-    },
-    {
-      "id": 20,
-      "question": "À quelle fréquence commentes-tu ou likes-tu des publications sur Instagram ?",
-      "options":{
-        "A": "Oui, très souvent",
-        "B": "Parfois",
-        "C": "Rarement",
-        "D": "Jamais"
-      }
+    "impact": {
+      "A": 182.5,
+      "B": 365,
+      "C": 730,
+      "D": 1095
     }
+  },
+  {
+    "id": 2,
+    "question": "A quelle fréquence consultes-tu tes notifications Instagram après les avoir reçues ?",
+    "options": {
+      "A": "Immédiatement",
+      "B": "Après 30 minutes",
+      "C": "Après 1h",
+      "D": "Plus d’une heure"
+    },
+    "impact": {
+      "A": 730,
+      "B": 547.5,
+      "C": 365,
+      "D": 91.25
+    }
+  },
+  {
+    "id": 3,
+    "question": "Combien suis-tu de comptes Instagram ?",
+    "options": {
+      "A": "Moins de 150",
+      "B": "150 à 300",
+      "C": "300 à 500",
+      "D": "Plus de 500"
+    },
+    "impact": {
+      "A": 182.5,
+      "B": 365,
+      "C": 730,
+      "D": 1095
+    }
+  },
+  {
+    "id": 4,
+    "question": "Utilises-tu souvent les émojis ou les réactions sur Instagram ?",
+    "options": {
+      "A": "Toujours",
+      "B": "Souvent",
+      "C": "Parfois",
+      "D": "Jamais"
+    },
+    "impact": {
+      "A": 365,
+      "B": 365,
+      "C": 182.5,
+      "D": 91.25
+    }
+  },
+  {
+    "id": 5,
+    "question": "Quel type de contenu préfères-tu consulter sur Instagram ?",
+    "options": {
+      "A": "Photos",
+      "B": "Vidéos",
+      "C": "Story",
+      "D": "Lives"
+    },
+    "impact": {
+      "A": 182.5,
+      "B": 547.5,
+      "C": 365,
+      "D": 730
+    }
+  },
+  {
+    "id": 6,
+    "question": "As-tu déjà désactivé des notifications pour certains groupes Instagram ?",
+    "options": {
+      "A": "Oui, pour tous les groupes",
+      "B": "Oui, pour certains groupes",
+      "C": "Non, jamais"
+    },
+    "impact": {
+      "A": 182.5,
+      "B": 365,
+      "C": 730
+    }
+  },
+  {
+    "id": 7,
+    "question": "Combien de publications publies-tu sur Instagram par semaine ?",
+    "options": {
+      "A": "Moins de 2",
+      "B": "2 à 5",
+      "C": "5 à 10",
+      "D": "Plus de 10"
+    },
+    "impact": {
+      "A": 182.5,
+      "B": 365,
+      "C": 730,
+      "D": 1095
+    }
+  },
+  {
+    "id": 8,
+    "question": "Utilises-tu Instagram principalement sur ton téléphone ou sur ton PC ?",
+    "options": {
+      "A": "Sur mon téléphone",
+      "B": "Sur mon PC",
+      "C": "Les deux de manière égale"
+    },
+    "impact": {
+      "A": 730,
+      "B": 182.5,
+      "C": 365
+    }
+  },
+  {
+    "id": 9,
+    "question": "Combien de fois par jour vérifies-tu les notifications sur Instagram ?",
+    "options": {
+      "A": "Très souvent (plus de 10 fois)",
+      "B": "Assez souvent (5 à 10 fois)",
+      "C": "Rarement (1 à 5 fois)",
+      "D": "Jamais"
+    },
+    "impact": {
+      "A": 730,
+      "B": 365,
+      "C": 182.5,
+      "D": 91.25
+    }
+  },
+  {
+    "id": 10,
+    "question": "Es-tu un utilisateur actif des stories ou des vidéos en direct ?",
+    "options": {
+      "A": "Actif des stories",
+      "B": "Actif des vidéos en direct"
+    },
+    "impact": {
+      "A": 365,
+      "B": 730
+    }
+  },
+  {
+    "id": 11,
+    "question": "As-tu désactivé la lecture automatique des vidéos sur Instagram ?",
+    "options": {
+      "A": "Oui",
+      "B": "Non"
+    },
+    "impact": {
+      "A": 182.5,
+      "B": 365
+    }
+  },
+  {
+    "id": 12,
+    "question": "Quel type de contenu préfères-tu liker ?",
+    "options": {
+      "A": "Photos",
+      "B": "Vidéos"
+    },
+    "impact": {
+      "A": 182.5,
+      "B": 365
+    }
+  },
+  {
+    "id": 13,
+    "question": "As-tu un abonnement payant sur Instagram ?",
+    "options": {
+      "A": "Oui",
+      "B": "Non"
+    },
+    "impact": {
+      "A": 365,
+      "B": 182.5
+    }
+  },
+  {
+    "id": 14,
+    "question": "Es-tu créateur de contenu ?",
+    "options": {
+      "A": "Oui",
+      "B": "Non"
+    },
+    "impact": {
+      "A": 730,
+      "B": 182.5
+    }
+  },
+  {
+    "id": 15,
+    "question": "Combien de fois par jour regardes-tu des vidéos sur Instagram ?",
+    "options": {
+      "A": "Moins de 10 fois",
+      "B": "Entre 10 et 20 fois",
+      "C": "Entre 20 et 40 fois",
+      "D": "Plus de 40 fois"
+    },
+    "impact": {
+      "A": 182.5,
+      "B": 365,
+      "C": 730,
+      "D": 1095
+    }
+  },
+  {
+    "id": 16,
+    "question": "Est-ce que tu partages des publications sur Instagram ?",
+    "options": {
+      "A": "Oui, très souvent",
+      "B": "Parfois",
+      "C": "Rarement",
+      "D": "Jamais"
+    },
+    "impact": {
+      "A": 730,
+      "B": 365,
+      "C": 182.5,
+      "D": 91.25
+    }
+  },
+  {
+    "id": 17,
+    "question": "Utilises-tu Instagram pour passer des appels vidéo ?",
+    "options": {
+      "A": "Oui",
+      "B": "Non"
+    },
+    "impact": {
+      "A": 730,
+      "B": 182.5
+    }
+  },
+  {
+    "id": 18,
+    "question": "Quel type de contenu préfères-tu poster sur Instagram ?",
+    "options": {
+      "A": "Photos",
+      "B": "Vidéos",
+      "C": "Story"
+    },
+    "impact": {
+      "A": 365,
+      "B": 730,
+      "C": 365
+    }
+  },
+  {
+    "id": 19,
+    "question": "Est-ce que tu réduis la taille de tes fichiers (photos/vidéos) ?",
+    "options": {
+      "A": "Oui, très souvent",
+      "B": "Parfois",
+      "C": "Rarement",
+      "D": "Jamais"
+    },
+    "impact": {
+      "A": 182.5,
+      "B": 365,
+      "C": 730,
+      "D": 1095
+    }
+  },
+  {
+    "id": 20,
+    "question": "À quelle fréquence commentes-tu et likes-tu des publications sur Instagram ?",
+    "options": {
+      "A": "Très souvent",
+      "B": "Parfois",
+      "C": "Rarement",
+      "D": "Jamais"
+    },
+    "impact": {
+      "A": 730,
+      "B": 365,
+      "C": 182.5,
+      "D": 91.25
+    }
+  }
   ],
 
 
@@ -396,6 +615,12 @@
         "B": "30 minutes à 1 heure",
         "C": "1 à 2 heures",
         "D": "Plus de 2 heures"
+      },
+      "impact": {
+        "A": 365,
+        "B": 730,
+        "C": 1460,
+        "D": 2190
       }
     },
     {
@@ -406,6 +631,12 @@
         "B": "Après 30 minutes",
         "C": "Après 1h",
         "D": "Plus d’une heure"
+      },
+      "impact": {
+        "A": 730,
+        "B": 547.5,
+        "C": 365,
+        "D": 274
       }
     },
     {
@@ -415,16 +646,27 @@
         "A": "Un seul",
         "B": "Plusieurs",
         "C": "Aucun"
+      },
+      "impact": {
+        "A": 104,
+        "B": 260,
+        "C": 52
       }
     },
     {
       "id": 4,
-      "question": "Utilises-tu souvent les emojis ou les réactions sur Facebook ?",
+      "question": "Utilises-tu souvent les émojis ou les réactions sur Facebook ?",
       "options": {
         "A": "Toujours",
         "B": "Souvent",
         "C": "Parfois",
         "D": "Jamais"
+      },
+      "impact": {
+        "A": 730,
+        "B": 547.5,
+        "C": 365,
+        "D": 182.5
       }
     },
     {
@@ -435,25 +677,42 @@
         "B": "Vidéos",
         "C": "Story",
         "D": "Direct"
+      },
+      "impact": {
+        "A": 547.5,
+        "B": 1095,
+        "C": 730,
+        "D": 1460
       }
     },
     {
       "id": 6,
-      "question": "As-tu déjà désactivé des notifications pour certains serveurs Facebook ?",
+      "question": "As-tu déjà désactivé des notifications pour certains groupes Facebook ?",
       "options": {
-        "A": "Oui, pour tous mes serveurs",
-        "B": "Oui, mais seulement pour certains serveurs",
+        "A": "Oui, pour tous les groupes",
+        "B": "Oui, pour certains groupes",
         "C": "Non, jamais"
+      },
+      "impact": {
+        "A": 365,
+        "B": 182.5,
+        "C": 730
       }
     },
     {
-      "id":7,
-      "question": "Combien as-tu d'amis sur Facebook ?",
+      "id": 7,
+      "question": "Combien as-tu d’amis sur Facebook ?",
       "options": {
         "A": "Moins de 50",
         "B": "Entre 50 et 200",
         "C": "Entre 200 et 500",
         "D": "Plus de 500"
+      },
+      "impact": {
+        "A": 365,
+        "B": 730,
+        "C": 1095,
+        "D": 1460
       }
     },
     {
@@ -463,6 +722,11 @@
         "A": "Sur mon téléphone",
         "B": "Sur mon PC",
         "C": "Les deux de manière égale"
+      },
+      "impact": {
+        "A": 730,
+        "B": 730,
+        "C": 1095
       }
     },
     {
@@ -473,32 +737,52 @@
         "B": "Assez souvent (5 à 10 fois)",
         "C": "Rarement (1 à 5 fois)",
         "D": "Jamais"
+      },
+      "impact": {
+        "A": 1095,
+        "B": 730,
+        "C": 547.5,
+        "D": 365
       }
     },
     {
       "id": 10,
-      "question": "Es-tu un consommateur des vidéos en direct ?",
+      "question": "Es-tu un consommateur de vidéos en direct ?",
       "options": {
         "A": "Oui",
         "B": "Non"
+      },
+      "impact": {
+        "A": 1095,
+        "B": 365
       }
     },
     {
       "id": 11,
-      "question": "As-tu déjà désactivé la lecture automatique des vidéos sur Instagram  ?",
+      "question": "As-tu désactivé la lecture automatique des vidéos sur Facebook ?",
       "options": {
         "A": "Oui",
         "B": "Non"
+      },
+      "impact": {
+        "A": 182.5,
+        "B": 730
       }
     },
     {
       "id": 12,
       "question": "Comment préfères-tu interagir sur Facebook ?",
-      "options":{
+      "options": {
         "A": "Par commentaires",
         "B": "Par messages privés",
         "C": "Liker",
         "D": "Partager"
+      },
+      "impact": {
+        "A": 730,
+        "B": 730,
+        "C": 365,
+        "D": 730
       }
     },
     {
@@ -507,6 +791,10 @@
       "options": {
         "A": "Oui",
         "B": "Non"
+      },
+      "impact": {
+        "A": 730,
+        "B": 365
       }
     },
     {
@@ -515,34 +803,54 @@
       "options": {
         "A": "Oui",
         "B": "Non"
+      },
+      "impact": {
+        "A": 1095,
+        "B": 365
       }
     },
     {
       "id": 15,
-      "question": "Combien de publications publies-tu sur Facebook par semaine?",
+      "question": "Combien de publications publies-tu sur Facebook par semaine ?",
       "options": {
         "A": "Moins de 2",
         "B": "2 à 5",
         "C": "5 à 10",
         "D": "Plus de 10"
+      },
+      "impact": {
+        "A": 365,
+        "B": 547.5,
+        "C": 1095,
+        "D": 1460
       }
     },
     {
       "id": 16,
       "question": "Est-ce que tu partages des publications sur Facebook ?",
       "options": {
-        "A": "Oui, très souvent",
+        "A": "Oui très souvent",
         "B": "Parfois",
         "C": "Rarement",
         "D": "Jamais"
+      },
+      "impact": {
+        "A": 1095,
+        "B": 730,
+        "C": 365,
+        "D": 182.5
       }
     },
     {
       "id": 17,
-      "question": "Utilises-tu Facebook pour passer des appels vidéo ?",
+      "question": "Utilises-tu Facebook pour passer des appels vidéos ?",
       "options": {
         "A": "Oui",
         "B": "Non"
+      },
+      "impact": {
+        "A": 1095,
+        "B": 365
       }
     },
     {
@@ -552,26 +860,43 @@
         "A": "Photos",
         "B": "Vidéos",
         "C": "Story"
+      },
+      "impact": {
+        "A": 547.5,
+        "B": 1095,
+        "C": 730
       }
     },
     {
       "id": 19,
-      "question": "Est-ce que tu réduit la taille des tes fichiers (photos/vidéos) avant des les publier ?",
+      "question": "Est-ce que tu réduis la taille de tes fichiers (photos/vidéos) ?",
       "options": {
-        "A": "Oui, très souvent",
+        "A": "Oui très souvent",
         "B": "Parfois",
         "C": "Rarement",
         "D": "Jamais"
+      },
+      "impact": {
+        "A": 182.5,
+        "B": 365,
+        "C": 730,
+        "D": 1095
       }
     },
     {
       "id": 20,
-      "question": "À quelle fréquence commentes-tu ou likes-tu des publications sur Instagram ?",
-      "options":{
-        "A": "Oui, très souvent",
+      "question": "À quelle fréquence commentes-tu et likes-tu des publications sur Facebook ?",
+      "options": {
+        "A": "Très souvent",
         "B": "Parfois",
         "C": "Rarement",
         "D": "Jamais"
+      },
+      "impact": {
+        "A": 1095,
+        "B": 730,
+        "C": 365,
+        "D": 182.5
       }
     }
   ]
