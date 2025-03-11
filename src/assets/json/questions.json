@@ -196,6 +196,8 @@
       }
     }
  ],
+
+
  "Instagram": [
     {
       "id": 1,
@@ -311,7 +313,7 @@
     },
     {
       "id": 13,
-      "question": "As-tu un abonnement payant ?",
+      "question": "As-tu un abonnement payant sur Instagram ?",
       "options": {
         "A": "Oui",
         "B": "Non"
@@ -383,6 +385,8 @@
       }
     }
   ],
+
+
   "Facebook": [
     {
       "id": 1,
@@ -431,6 +435,86 @@
         "B": "Vidéos",
         "C": "Story",
         "D": "Direct"
+      }
+    },
+    {
+      "id": 6,
+      "question": "As-tu déjà désactivé des notifications pour certains serveurs Facebook ?",
+      "options": {
+        "A": "Oui, pour tous mes serveurs",
+        "B": "Oui, mais seulement pour certains serveurs",
+        "C": "Non, jamais"
+      }
+    },
+    {
+      "id":7,
+      "question": "Combien as-tu d'amis sur Facebook ?",
+      "options": {
+        "A": "Moins de 50",
+        "B": "Entre 50 et 200",
+        "C": "Entre 200 et 500",
+        "D": "Plus de 500"
+      }
+    },
+    {
+      "id": 8,
+      "question": "Utilises-tu Facebook principalement sur ton téléphone ou sur ton PC ?",
+      "options": {
+        "A": "Sur mon téléphone",
+        "B": "Sur mon PC",
+        "C": "Les deux de manière égale"
+      }
+    },
+    {
+      "id": 9,
+      "question": "Combien de fois par jour vérifies-tu les notifications sur Facebook ?",
+      "options": {
+        "A": "Très souvent (plus de 10 fois)",
+        "B": "Assez souvent (5 à 10 fois)",
+        "C": "Rarement (1 à 5 fois)",
+        "D": "Jamais"
+      }
+    },
+    {
+      "id": 10,
+      "question": "Es-tu un consommateur des vidéos en direct ?",
+      "options": {
+        "A": "Oui",
+        "B": "Non"
+      }
+    },
+    {
+      "id": 11,
+      "question": "As-tu déjà désactivé la lecture automatique des vidéos sur Instagram  ?",
+      "options": {
+        "A": "Oui",
+        "B": "Non"
+      }
+    },
+    {
+      "id": 13,
+      "question": "As-tu un abonnement payant sur Facebook ?",
+      "options": {
+        "A": "Oui",
+        "B": "Non"
+      }
+    },
+    {
+      "id": 14,
+      "question": "Es-tu créateur de contenu ?",
+      "options": {
+        "A": "Oui",
+        "B": "Non"
+      }
+    },
+    {
+      "id": 15,
+      "question": "Combien de publications publies-tu sur Facebook par semaine?",
+      "options": {
+        "A": "Moins de 2",
+        "B": "2 à 5",
+        "C": "5 à 10",
+        "D": "Plus de 10"
       }
     }
   ]
