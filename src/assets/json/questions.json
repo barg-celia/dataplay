@@ -339,7 +339,7 @@
     },
     {
       "id": 16,
-      "question": "Est-ce que tu partages des publications d'autres utilisateurs sur Instagram ?",
+      "question": "Est-ce que tu partages des publications sur Instagram ?",
       "options": {
         "A": "Oui, très souvent",
         "B": "Parfois",
@@ -492,6 +492,16 @@
       }
     },
     {
+      "id": 12,
+      "question": "Comment préfères-tu interagir sur Facebook ?",
+      "options":{
+        "A": "Par commentaires",
+        "B": "Par messages privés",
+        "C": "Liker",
+        "D": "Partager"
+      }
+    },
+    {
       "id": 13,
       "question": "As-tu un abonnement payant sur Facebook ?",
       "options": {
@@ -515,6 +525,53 @@
         "B": "2 à 5",
         "C": "5 à 10",
         "D": "Plus de 10"
+      }
+    },
+    {
+      "id": 16,
+      "question": "Est-ce que tu partages des publications sur Facebook ?",
+      "options": {
+        "A": "Oui, très souvent",
+        "B": "Parfois",
+        "C": "Rarement",
+        "D": "Jamais"
+      }
+    },
+    {
+      "id": 17,
+      "question": "Utilises-tu Facebook pour passer des appels vidéo ?",
+      "options": {
+        "A": "Oui",
+        "B": "Non"
+      }
+    },
+    {
+      "id": 18,
+      "question": "Quel type de contenu préfères-tu poster sur Facebook ?",
+      "options": {
+        "A": "Photos",
+        "B": "Vidéos",
+        "C": "Story"
+      }
+    },
+    {
+      "id": 19,
+      "question": "Est-ce que tu réduit la taille des tes fichiers (photos/vidéos) avant des les publier ?",
+      "options": {
+        "A": "Oui, très souvent",
+        "B": "Parfois",
+        "C": "Rarement",
+        "D": "Jamais"
+      }
+    },
+    {
+      "id": 20,
+      "question": "À quelle fréquence commentes-tu ou likes-tu des publications sur Instagram ?",
+      "options":{
+        "A": "Oui, très souvent",
+        "B": "Parfois",
+        "C": "Rarement",
+        "D": "Jamais"
       }
     }
   ]
