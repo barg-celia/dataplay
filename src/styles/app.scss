@@ -1,32 +1,40 @@
 @import 'utils/variables';
 @import 'components/type';
 
+$font-color: #f0f8ff;
+$btn-color: #111111;
+$background-color: #ffffff;
+$btn-size: 16px;
+$font-size: 23px;
+$border-radius: 20px;
+
 body{
     margin: 0px;
     padding: 0px;
     font-size: 23px;
-    color: aliceblue;
+    color: #f0f8ff;
     font-family: 'albert sans';
     line-height: 1,4;
-}
-
-h1{
+  }
+  
+  h1{
     font-size: 90px;
     margin-bottom: 0px;
-}
-
-h2{
+  }
+  
+  h2{
     font-size: 64px;
     margin-bottom: 30px;
-}
-
-h3{
+  }
+  
+  h3{
     font-size: 32px;
     margin-top: 80px;
     margin-left: 50px;
-}
-
-.img--background {
+  }
+  
+  .img--background {
+    background-image: url("../assets/images/rectangle.jpg");
     position: fixed;  /* Fixe l'image en arrière-plan */
     top: 0;
     left: 0;
@@ -34,126 +42,109 @@ h3{
     height: 100vh; /* Hauteur = 100% de la fenêtre */
     object-fit: cover; /* Couvre toute la zone sans déformation */
     z-index: -1; /* Place l'image derrière les autres éléments */
-}
-
-.img--section2{
+  }
+  
+  .img--section2{
     top: 845px;
-}
-
-.img--section3{
+  }
+  
+  .img--section3{
     top: 1690px;
-}
-
-.header{
+  }
+  
+  .scroll{
+    position: relative;
+    height: 100%;
+    z-index: 10;
+  }
+  
+  .texte--header{
+    margin-left: 313px;
+    margin-right: 313px;
+  }
+  
+  .line--box{
+    display: flex;
+    justify-content: center;
+    height: 3px;
+    width: 80%;
+    background-color: rgb(178, 182, 185);
+  }
+  
+  a{
+    text-decoration: none;
+    color: aliceblue;
+    padding-right: 30px;
+  }
+  
+  .link--header{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .card {
+    position: relative; /* Permet au bouton en absolute de se positionner par rapport à cette div */
+    height: 427px;
+    width: 640px;
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid white;
+  }
+  
+  .card1 {
+    position: relative; /* Permet au bouton en absolute de se positionner par rapport à cette div */
+    height: 427px;
+    width: 640px;
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid white;
+  }
+  
+  .section--1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
-}
-
-.scroll{
-    position: relative;
-    height: 100%;
-    z-index: 10;
-}
-
-.texte--header{
-    margin-left: 313px;
-    margin-right: 313px;
-}
-
-.line--box{
-    display: flex;
-    justify-content: center;
-}
-.line_1{
-    height: 3px;
-    width: 80%;
-    background-color: rgb(178, 182, 185);
-}
-
-a{
-    text-decoration: none;
-    color: aliceblue;
-    padding-right: 30px;
-}
-
-.EN{
-    margin-left: 800px;
-    padding-right: 0px;
-}
-
-.link--header{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.card {
-    position: relative; /* Permet au bouton en absolute de se positionner par rapport à cette div */
-    height: 427px;
-    width: 640px;
-    background-color: black;
-    border-radius: 20px;
-    border: 2px solid white;
-}
-
-.card1 {
-    position: relative; /* Permet au bouton en absolute de se positionner par rapport à cette div */
-    height: 427px;
-    width: 640px;
-    background-color: black;
-    border-radius: 20px;
-    border: 2px solid white;
-}
-
-.section--1{
-    margin-top: 30px;
-}
-
-.section--2{
+    margin-top: 180px;
+  }
+  
+  .section--2{
     margin-top: 40px;
     margin-bottom: 100px;
-}
-
-.texte--contenu{
+  }
+  
+  .texte--contenu{
     width: 640px;
     margin-bottom: 50px;
-}
-
-ul{
+  }
+  
+  ul{
     list-style: none;
-}
-
-button{
+  }
+  
+  button{
     opacity: 0;
-}
-
-.grid--section2{
+  }
+  
+  .grid--section2{
     background-color: rgb(185, 189, 189);
     width: 800px;
     height: 500px;
     display: flex;
     justify-content: space-between; /* Aligne les boutons sur la même ligne */
     gap: 10px;
-}
-
-.grid--div{
+  }
+  
+  .grid--div{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.Lsection{
-    margin-top: 33px;
-}
-
-.btn--suivant {
+  }
+  
+  .btn--suivant {
     margin-top: 120px;
     padding: 10px 20px;
-    background-color: white;
-    color: black;
     border: none;
     cursor: pointer;
     font-size: 16px;
@@ -161,29 +152,29 @@ button{
     opacity: 1;
     text-align: center;
     margin-left: 265px;
-}
-
-.btn--suivant:hover {
+  }
+  
+  .btn--suivant:hover {
     background-color: #838b83;
-}
-
-.progress-container {
+  }
+  
+  .progress-container {
     width: 100%;
     background-color: #ddd;
     border-radius: 5px;
     margin: 10px 0;
     height: 10px;
-}
-
-.progress-bar {
+  }
+  
+  .progress-bar {
     height: 100%;
     width: 0%;
     background-color: #707070;
     border-radius: 5px;
     transition: width 0.3s ease-in-out;
-}
-
-.btn--prochain {
+  }
+  
+  .btn--prochain {
     position: absolute;
     bottom: 30px; /* Ajuste cette valeur pour placer le bouton plus haut */
     right: 50px;
@@ -194,35 +185,35 @@ button{
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
-}
-
-.progress-container1 {
+  }
+  
+  .progress-container1 {
     width: 100%;
     background-color: #ddd;
     border-radius: 5px;
     margin: 10px 0;
     height: 10px;
-}
-
-.progress-bar1 {
+  }
+  
+  .progress-bar1 {
     height: 100%;
     width: 0%;
     background-color: #4CAF50;
     border-radius: 5px;
     transition: width 0.3s ease-in-out;
-}
-
-.option-btn{
+  }
+  
+  .option-btn{
     color: white;
     opacity: 1;
-}
-
-.grid--section2 {
+  }
+  
+  .grid--section2 {
     display: flex;
     gap: 10px;
   }
-
-.btn--conso, .btn--utili, .btn--poll {
+  
+  .btn--conso, .btn--utili, .btn--poll {
     padding: 10px 20px;
     background-color: #6b6b6b;
     color: white;
@@ -231,10 +222,8 @@ button{
     opacity: 1;
     width: 250px;
     height: 40px;
-}
-
-#data-container {
-    margin-top: 20px;
-}
-
+  }
   
+  #data-container {
+    margin-top: 20px;
+  }
