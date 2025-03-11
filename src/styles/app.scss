@@ -1,86 +1,82 @@
 @import 'utils/variables';
 @import 'components/type';
 
-$font-color: #f0f8ff;
+$font-color: #ffffff;
 $btn-color: #111111;
 $background-color: #ffffff;
 $btn-size: 16px;
 $font-size: 23px;
 $border-radius: 20px;
 
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.size--half {
+    width: 50%;
+}
+
+.size--third {
+    width: calc(100%/3);
+}
+
+.border--bottom {
+    border-bottom: 3px solid rgb(178, 182, 185);
+}
+
 body{
-    margin: 0px;
+    margin-top: 0px;
     padding: 0px;
     font-size: 23px;
-    color: #f0f8ff;
+    color: #ffffff;
     font-family: 'albert sans';
     line-height: 1,4;
   }
-  
+
   h1{
     font-size: 90px;
-    margin-bottom: 0px;
+    width: fit-content;
+    margin: 0 auto;
   }
   
   h2{
     font-size: 64px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    font-weight:normal;
   }
   
   h3{
     font-size: 32px;
-    margin-top: 80px;
-    margin-left: 50px;
+    width: fit-content;
+    margin: 100px auto 0;
   }
   
   .img--background {
     background-image: url("../assets/images/rectangle.jpg");
     position: fixed;  /* Fixe l'image en arrière-plan */
+    background-size: cover;
     top: 0;
     left: 0;
-    width: 100vw;  /* Largeur = 100% de la fenêtre */
-    height: 100vh; /* Hauteur = 100% de la fenêtre */
-    object-fit: cover; /* Couvre toute la zone sans déformation */
+    width: 100%;  /* Largeur = 100% de la fenêtre */
+    height: 100%; /* Hauteur = 100% de la fenêtre */
     z-index: -1; /* Place l'image derrière les autres éléments */
   }
-  
-  .img--section2{
-    top: 845px;
-  }
-  
-  .img--section3{
-    top: 1690px;
-  }
-  
-  .scroll{
-    position: relative;
-    height: 100%;
-    z-index: 10;
-  }
-  
-  .texte--header{
-    margin-left: 313px;
-    margin-right: 313px;
-  }
-  
-  .line--box{
-    display: flex;
-    justify-content: center;
-    height: 3px;
-    width: 80%;
-    background-color: rgb(178, 182, 185);
+  .header{
+    margin: 350px auto 0;
+    height: 100vh;
   }
   
   a{
     text-decoration: none;
-    color: aliceblue;
-    padding-right: 30px;
+    color: rgb(255, 255, 255);
+    padding:0  30px 10px 0;
   }
   
   .link--header{
     display: flex;
-    justify-content: center;
-    margin-top: 30px;
+    justify-content: space-evenly;
+    
   }
   
   .card {
@@ -90,6 +86,7 @@ body{
     background-color: black;
     border-radius: 20px;
     border: 2px solid white;
+    margin-bottom: 100px;
   }
   
   .card1 {
@@ -101,17 +98,18 @@ body{
     border: 2px solid white;
   }
   
-  .section--1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 180px;
+  .section1{
+    width: fit-content;
+    margin: 0 auto ;
   }
-  
-  .section--2{
-    margin-top: 40px;
-    margin-bottom: 100px;
+  .section1 p{
+    margin:40px 0;
+  }
+  .section2{
+    width: fit-content;
+    margin: 40px auto;
+    display: flex;
+    gap: 10px;
   }
   
   .texte--contenu{
@@ -127,7 +125,7 @@ body{
     opacity: 0;
   }
   
-  .grid--section2{
+  .section2{
     background-color: rgb(185, 189, 189);
     width: 800px;
     height: 500px;
@@ -208,12 +206,7 @@ body{
     opacity: 1;
   }
   
-  .grid--section2 {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .btn--conso, .btn--utili, .btn--poll {
+  .btn{
     padding: 10px 20px;
     background-color: #6b6b6b;
     color: white;
@@ -223,7 +216,17 @@ body{
     width: 250px;
     height: 40px;
   }
-  
-  #data-container {
-    margin-top: 20px;
+  .btn__actif{
+    padding: 10px 20px;
+    color:#6b6b6b;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+    width: 250px;
+    height: 40px;
   }
+  #data-container {
+    margin-top: 40px;
+  }
+
