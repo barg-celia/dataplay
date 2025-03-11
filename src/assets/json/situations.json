@@ -93,8 +93,8 @@
       "question": "Ton meilleur ami fête son anniversaire.",
       "options": {
         "A": "Tu lui souhaites sur son feed.",
-        "B": "Tu lui souhaites en message privé.",
-        "C": "Tu lui fais une story."
+        "C": "Tu lui souhaites en message privé.",
+        "B": "Tu lui fais une story."
       }
     },
     {
@@ -117,8 +117,8 @@
       "id": 15,
       "question": "Tu veux poster une photo de tes vacances.",
       "options": {
-        "A": "Tu retouches ta photo avec plusieurs applications avant de la poster en haute qualité.",
-        "B": "Tu publies ta photo sans retouches excessives et en qualité optimisée."
+        "B": "Tu retouches ta photo avec plusieurs applications avant de la poster en haute qualité.",
+        "A": "Tu publies ta photo sans retouches excessives et en qualité optimisée."
       }
     },
     {
@@ -141,8 +141,8 @@
       "id": 18,
       "question": "Tu es abonné(e) à de nombreuses pages/groupes qui ne t’intéressent plus.",
       "options": {
-        "A": "Tu restes abonné(e) par habitude.",
-        "B": "Tu fais régulièrement le tri pour ne garder que l’essentiel."
+        "B": "Tu restes abonné(e) par habitude.",
+        "A": "Tu fais régulièrement le tri pour ne garder que l’essentiel."
       }
     },
     {
@@ -157,8 +157,8 @@
       "id": 20,
       "question": "Un ami fait un live sur Twitch/Instagram/Facebook.",
       "options": {
-        "A": "Tu le laisses tourner en arrière-plan même si tu ne regardes pas vraiment.",
-        "B": "Tu regardes activement et quittes dès que ça ne t’intéresse plus."
+        "B": "Tu le laisses tourner en arrière-plan même si tu ne regardes pas vraiment.",
+        "A": "Tu regardes activement et quittes dès que ça ne t’intéresse plus."
       }
     }
   ]
