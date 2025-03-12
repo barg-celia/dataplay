@@ -134,11 +134,11 @@ fetch('assets/json/data.json')
 function displayEnergyConsumption(data) {
   let html = '';
   for (let year in data.Consommation_énergétique) {
-    html += `<h2>Consommation énergétique - ${year}</h2>`;
+    html += `<p>Consommation énergétique - ${year}</p>`;
     for (let platform in data.Consommation_énergétique[year]) {
       const platformData = data.Consommation_énergétique[year][platform];
       html += `
-        <h3>${platform}</h3>
+        <p>${platform}</p>
         <p>${platformData.Valeur}</p>
         <p>Équivalences:</p>
         <ul>
@@ -148,7 +148,7 @@ function displayEnergyConsumption(data) {
       `;
     }
   }
-  document.getElementById('data-container').innerHTML = html;
+  document.getElementById('data--container').innerHTML = html;
 }
 
 // Fonction pour afficher le nombre d'utilisateurs
@@ -166,29 +166,31 @@ function displayUserCount(data) {
       `;
     }
   }
-  document.getElementById('data-container').innerHTML = html;
+  document.getElementById('data--container').innerHTML = html;
 }
 
 // Fonction pour afficher la pollution
 function displayPollution(data) {
   let html = '';
   for (let year in data.Pollution_data_center) {
-    html += `<h2>Pollution des data centers - ${year}</h2>`;
+    html += `<p class="p_titre">Pollution des data centers - ${year}</p>`;
+    html += `<div class="grid-container">`; // Conteneur en grille
     for (let platform in data.Pollution_data_center[year]) {
       const platformData = data.Pollution_data_center[year][platform];
       html += `
-        <h3>${platform}</h3>
-        <p>${platformData.CO2} émis</p>
-        <p>Équivalences:</p>
-        <ul>
-          <li>${platformData.Équivalences.Tours_Terre_voiture}Tours de la Terre en voiture</li>Ou 
-          <li>${platformData.Équivalences.Steaks_300g} cuisson de steaks 300g par jour </li>
-        </ul>
+        <div class="grid-item">
+          <p class="p_resaux">${platform}</p>
+          <p>${platformData.CO2} émis</p>
+          <p>Équivalences :</p>
+          <ul>
+            <li>${platformData.Équivalences.Tours_Terre_voiture} Tours de la Terre en voiture</li>
+            <li>${platformData.Équivalences.Steaks_300g} cuisson de steaks de 300g par jour</li>
+          </ul>
+        </div>
       `;
     }
+    html += `</div>`; // Fermeture de la grid-container
   }
   document.getElementById('data--container').innerHTML = html;
 }
-document.getElementById('btn-pollution').addEventListener('click', () => {
-  displayPollution(data);
-});
+
