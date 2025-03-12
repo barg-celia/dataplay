@@ -159,7 +159,7 @@ body{
   
   .section2{
     background-color: #D9D9D9;
-    width: 800px;
+    width: 804px;
     height: 500px;
     display: flex;
     justify-content: space-between; /* Aligne les boutons sur la même ligne */
@@ -264,7 +264,7 @@ body{
     border: none;
     cursor: pointer;
     opacity: 1;
-    width: 264px;
+    width: 263.7px;
     height: 40px;
     border-radius: 10px 10px 0 0;
     font-size: 16px;
@@ -291,6 +291,18 @@ body{
   #data-container {
     margin-top: 40px;
   }
+  .square-radio {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #FFFFFF;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:checked {
+        background-color: #FFFFFF;
+    }
+}
   footer{
     display: flex;
     margin:40px auto;
