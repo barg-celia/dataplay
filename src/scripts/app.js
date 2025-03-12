@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
             situationsData = data.situations;
             displayRandomSituation(situationsData);
         })
-        .catch(error => console.error("Erreur lors du chargement du JSON :", error));
 
     function displayRandomSituation(situations) {
         if (questionCount >= maxQuestions) {
@@ -130,9 +129,6 @@ fetch('assets/json/data.json')
     document.querySelector('.btn--utili').addEventListener('click', () => displayUserCount(data));
     document.querySelector('.btn--poll').addEventListener('click', () => displayPollution(data));
   })
-  .catch(error => {
-    console.error('Erreur lors du chargement des données:', error);
-  });
 
 // Fonction pour afficher la consommation énergétique
 function displayEnergyConsumption(data) {
@@ -191,5 +187,8 @@ function displayPollution(data) {
       `;
     }
   }
-  document.getElementById('data-container').innerHTML = html;
+  document.getElementById('data--container').innerHTML = html;
 }
+document.getElementById('btn-pollution').addEventListener('click', () => {
+  displayPollution(data);
+});
