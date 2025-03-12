@@ -2,37 +2,37 @@
   "Consommation_énergétique": {
     "Chiffres 2020": {
       "Discord": {
-        "Valeur": "500 000 kWh",
+        "Valeur": "500 000 KWh",
         "Équivalences": {
           "Recharge_smartphone": {
-            "Nombre_de_charges": "33,3 millions"
+            "Nombre_de_charges": "92 329 "
           },
           "Douches": {
-            "Nombre_de_douches": 83300,
+            "Nombre_de_douches": "428 ",
             "Durée_par_douche": "10 minutes"
           }
         }
       },
       "Instagram": {
-        "Valeur": "13 344 000 kWh",
+        "Valeur": "13 344 MWh",
         "Équivalences": {
           "Recharge_smartphone": {
-            "Nombre_de_charges": "889,6 millions"
+            "Nombre_de_charges": "2,5 millions"
           },
           "Douches": {
-            "Nombre_de_douches": "2,67 millions",
+            "Nombre_de_douches": "13 344",
             "Durée_par_douche": "10 minutes"
           }
         }
       },
       "Facebook": {
-        "Valeur": "2 187 020 kWh",
+        "Valeur": "2,19 TWh",
         "Équivalences": {
           "Recharge_smartphone": {
-            "Nombre_de_charges": "219 milliards"
+            "Nombre_de_charges": "405,4 millions"
           },
           "Douches": {
-            "Nombre_de_douches": "1,1 milliard",
+            "Nombre_de_douches": "1,87 millions",
             "Durée_par_douche": "10 minutes"
           }
         }
@@ -40,25 +40,25 @@
     },
     "Chiffres 2023": {
       "Discord": {
-        "Valeur": "1 000 000 kWh",
+        "Valeur": "1 000 MWh",
         "Équivalences": {
           "Recharge_smartphone": {
-            "Nombre_de_charges": "100 millions"
+            "Nombre_de_charges": "185 140 "
           },
           "Douches": {
-            "Nombre_de_douches": "166 700",
+            "Nombre_de_douches": "856",
             "Durée_par_douche": "10 minutes"
           }
         }
       },
       "Instagram": {
-        "Valeur": "26 688 000 kWh",
+        "Valeur": "26 688 MWh",
         "Équivalences": {
           "Recharge_smartphone": {
-            "Nombre_de_charges": "46,7 millions"
+            "Nombre_de_charges": "4,9 millions"
           },
           "Douches": {
-            "Nombre_de_douches": "166 700",
+            "Nombre_de_douches": "22 830",
             "Durée_par_douche": "10 minutes"
           }
         }
@@ -67,10 +67,10 @@
         "Valeur": "14,98 TWh",
         "Équivalences": {
           "Recharge_smartphone": {
-            "Nombre_de_charges": "999 milliards"
+            "Nombre_de_charges": "2,8 milliards"
           },
           "Douches": {
-            "Nombre_de_douches": "2 996 milliards",
+            "Nombre_de_douches": "12,83 millions",
             "Durée_par_douche": "10 minutes"
           }
         }
@@ -106,22 +106,22 @@
       "Discord": {
         "CO2": "300 000 Tonnes de CO2",
         "Équivalences": {
-          "Tours_Terre_voiture": "62 500 millions ",
-          "Steaks_300g": "22,2 millions"
+          "Tours_Terre_voiture": "62 500 ",
+          "Steaks_300g": "10,2 millions "
         }
       },
       "Instagram": {
         "CO2": "14 100 Tonnes de CO2",
         "Équivalences": {
-          "Tours_Terre_voiture": "2 933 ",
-          "Steaks_300g": "1,04 millions"
+          "Tours_Terre_voiture": "2 930 ",
+          "Steaks_300g": "482 191"
         }
       },
       "Facebook": {
-        "CO2": "200 000 Tonnes de CO2",
+        "CO2": "4 000 000 Tonnes de CO2",
         "Équivalences": {
-          "Tours_Terre_voiture": "41 579 millions ",
-          "Steaks_300g": "14,8 millions"
+          "Tours_Terre_voiture": "832 905 ",
+          "Steaks_300g": "136 millions"
         }
       }
     },
@@ -129,22 +129,22 @@
       "Discord": {
         "CO2": "6 000 000 Tonnes de CO2",
         "Équivalences": {
-          "Tours_Terre_voiture": "900 000 ",
-          "Steaks_300g": "444 millions"
+          "Tours_Terre_voiture": "1,2 millions",
+          "Steaks_300g": "205 millions"
         }
       },
       "Instagram": {
         "CO2": "14 070 000 Tonnes de CO2",
         "Équivalences": {
-          "Tours_Terre_voiture": "1,82 millions",
-          "Steaks_300g": "914 millions"
+          "Tours_Terre_voiture": "2,92 millions",
+          "Steaks_300g": "481 millions"
         }
       },
       "Facebook": {
         "CO2": "50 610 Tonnes de CO2",
         "Équivalences": {
-          "Tours_Terre_voiture": "10 529 millions ",
-          "Steaks_300g": "3,75 millions"
+          "Tours_Terre_voiture": "10 528 ",
+          "Steaks_300g": "1,73 millions"
         }
       }
     }

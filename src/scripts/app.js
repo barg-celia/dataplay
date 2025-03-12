@@ -146,7 +146,7 @@ function displayEnergyConsumption(data) {
         <p>${platformData.Valeur}</p>
         <p>Équivalences:</p>
         <ul>
-          <li>Recharger ${platformData.Équivalences.Recharge_smartphone.Nombre_de_charges} de fois un smarphones en charge complète</li> Ou
+          <li>Recharger ${platformData.Équivalences.Recharge_smartphone.Nombre_de_charges} fois un smarphones par jour </li> Ou
           <li>Prendre ${platformData.Équivalences.Douches.Nombre_de_douches} douches de ${platformData.Équivalences.Douches.Durée_par_douche}</li>
         </ul>
       `;
@@ -184,7 +184,7 @@ function displayPollution(data) {
         <p>Équivalences:</p>
         <ul>
           <li>${platformData.Équivalences.Tours_Terre_voiture}Tours de la Terre en voiture</li>Ou 
-          <li>${platformData.Équivalences.Steaks_300g} de steaks 300g </li>
+          <li>${platformData.Équivalences.Steaks_300g} cuisson de steaks 300g par jour </li>
         </ul>
       `;
     }
