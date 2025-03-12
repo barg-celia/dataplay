@@ -165,6 +165,8 @@ function displayUserCount(data) {
       html += `
         <h3>${platform}</h3>
         <p>Nombre d'utilisateurs: ${platformData.valeur}</p>
+        <p>Équivalences:</p>
+        <p>${platformData.Équivalences.popu_belge} fois la population Belge </p>
       `;
     }
   }
@@ -175,7 +177,7 @@ function displayUserCount(data) {
 function displayPollution(data) {
   let html = '';
   for (let year in data.Pollution_data_center) {
-    html += `<h2>Pollution due aux data centers - ${year}</h2>`;
+    html += `<h2>Pollution des data centers - ${year}</h2>`;
     for (let platform in data.Pollution_data_center[year]) {
       const platformData = data.Pollution_data_center[year][platform];
       html += `

@@ -80,24 +80,42 @@
   "Nombre_utilisateurs": {
     "Chiffres 2020": {
       "Discord":{
-        "valeur": "100 000 000"
+        "valeur": "100 000 000",
+        "Équivalences": {
+          "popu_belge": "8,5"
+        }
       },
       "Instagram":{
-        "valeur": "1 082 000 000"
+        "valeur": "1 082 000 000",
+        "Équivalences": {
+          "popu_belge": "92,5"
+        }
       },
       "Facebook":{
-        "valeur": "2 800 000 000"
+        "valeur": "2 800 000 000",
+        "Équivalences": {
+          "popu_belge": "293"
+        }
       }
     },
     "Chiffres 2023": {
       "Discord":{
-        "valeur": "200 000 000"
+        "valeur": "200 000 000",
+        "Équivalences": {
+          "popu_belge": "17,1"
+        }
       },
       "Instagram":{
-        "valeur": "2 000 000 000"
+        "valeur": "2 000 000 000",
+        "Équivalences": {
+          "popu_belge": "171"
+        }
       },
       "Facebook":{
-        "valeur": "3 070 000 000"
+        "valeur": "3 070 000 000",
+        "Équivalences": {
+          "popu_belge": "262"
+        }
       }
     }
   },
