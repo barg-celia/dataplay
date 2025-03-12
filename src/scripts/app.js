@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="options">
                 ${Object.entries(situation.options).map(([key, option]) => 
                     `<label>
-                        <input type="radio" name="response" value="${key}">
+                        <input type="radio" class="square-radio" name="response" value="${key}">
                         ${option}
                     </label><br>`
                 ).join('')}
@@ -134,11 +134,11 @@ fetch('assets/json/data.json')
 function displayEnergyConsumption(data) {
   let html = '';
   for (let year in data.Consommation_énergétique) {
-    html += `<h2>Consommation énergétique - ${year}</h2>`;
+    html += `<p class="p_titre">Consommation énergétique - ${year}</p>`;
     for (let platform in data.Consommation_énergétique[year]) {
       const platformData = data.Consommation_énergétique[year][platform];
       html += `
-        <h3>${platform}</h3>
+        <p class="p_resaux">${platform}</p>
         <p>${platformData.Valeur}</p>
         <p>Équivalences:</p>
         <ul>
@@ -148,47 +148,45 @@ function displayEnergyConsumption(data) {
       `;
     }
   }
-  document.getElementById('data-container').innerHTML = html;
+  document.getElementById('data--container').innerHTML = html;
 }
 
 // Fonction pour afficher le nombre d'utilisateurs
 function displayUserCount(data) {
   let html = '';
   for (let year in data.Nombre_utilisateurs) {
-    html += `<h2>Nombre d'utilisateurs - ${year}</h2>`;
+    html += `<p class="p_titre">Nombre d'utilisateurs - ${year}</p>`;
     for (let platform in data.Nombre_utilisateurs[year]) {
       const platformData = data.Nombre_utilisateurs[year][platform];
       html += `
-        <h3>${platform}</h3>
+        <p class="p_resaux">${platform}</p>
         <p>Nombre d'utilisateurs: ${platformData.valeur}</p>
         <p>Équivalences:</p>
         <p>${platformData.Équivalences.popu_belge} fois la population Belge </p>
       `;
     }
   }
-  document.getElementById('data-container').innerHTML = html;
+  document.getElementById('data--container').innerHTML = html;
 }
 
 // Fonction pour afficher la pollution
 function displayPollution(data) {
   let html = '';
   for (let year in data.Pollution_data_center) {
-    html += `<h2>Pollution des data centers - ${year}</h2>`;
+    html += `<p class="p_titre">Pollution des data centers - ${year}</p>`;
     for (let platform in data.Pollution_data_center[year]) {
       const platformData = data.Pollution_data_center[year][platform];
       html += `
-        <h3>${platform}</h3>
-        <p>${platformData.CO2} émis</p>
-        <p>Équivalences:</p>
-        <ul>
-          <li>${platformData.Équivalences.Tours_Terre_voiture}Tours de la Terre en voiture</li>Ou 
-          <li>${platformData.Équivalences.Steaks_300g} cuisson de steaks 300g par jour </li>
-        </ul>
+          <p class="p_resaux">${platform}</p>
+          <p>${platformData.CO2} émis</p>
+          <p>Équivalences :</p>
+          <ul>
+            <li>${platformData.Équivalences.Tours_Terre_voiture} Tours de la Terre en voiture</li>
+            <li>${platformData.Équivalences.Steaks_300g} cuisson de steaks de 300g par jour</li>
+          </ul>
       `;
     }
   }
   document.getElementById('data--container').innerHTML = html;
 }
-document.getElementById('btn-pollution').addEventListener('click', () => {
-  displayPollution(data);
-});
+
