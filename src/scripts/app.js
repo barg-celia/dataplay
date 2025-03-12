@@ -146,7 +146,7 @@ function displayEnergyConsumption(data) {
         <p>${platformData.Valeur}</p>
         <p>Équivalences:</p>
         <ul>
-          <li>Recharger ${platformData.Équivalences.Recharge_smartphone.Nombre_de_charges} de fois un smarphones en charge complète</li> Ou
+          <li>Recharger ${platformData.Équivalences.Recharge_smartphone.Nombre_de_charges} fois un smarphones par jour </li> Ou
           <li>Prendre ${platformData.Équivalences.Douches.Nombre_de_douches} douches de ${platformData.Équivalences.Douches.Durée_par_douche}</li>
         </ul>
       `;
@@ -165,6 +165,8 @@ function displayUserCount(data) {
       html += `
         <h3>${platform}</h3>
         <p>Nombre d'utilisateurs: ${platformData.valeur}</p>
+        <p>Équivalences:</p>
+        <p>${platformData.Équivalences.popu_belge} fois la population Belge </p>
       `;
     }
   }
@@ -175,7 +177,7 @@ function displayUserCount(data) {
 function displayPollution(data) {
   let html = '';
   for (let year in data.Pollution_data_center) {
-    html += `<h2>Pollution due aux data centers - ${year}</h2>`;
+    html += `<h2>Pollution des data centers - ${year}</h2>`;
     for (let platform in data.Pollution_data_center[year]) {
       const platformData = data.Pollution_data_center[year][platform];
       html += `
@@ -184,7 +186,7 @@ function displayPollution(data) {
         <p>Équivalences:</p>
         <ul>
           <li>${platformData.Équivalences.Tours_Terre_voiture}Tours de la Terre en voiture</li>Ou 
-          <li>${platformData.Équivalences.Steaks_300g} de steaks 300g </li>
+          <li>${platformData.Équivalences.Steaks_300g} cuisson de steaks 300g par jour </li>
         </ul>
       `;
     }
