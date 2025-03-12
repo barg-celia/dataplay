@@ -11,7 +11,7 @@ $border-color: rgb(178, 182, 185);
 $text-color: #ffffff;
 $background-dark:black;
 $background-light:#d9d9d9;
-$font-main: 'Segoe UI, Tahoma, Geneva, verdana, sans-serif';
+$font-main: 'Segoe UI', Tahoma, Geneva, verdana, sans-serif;
 
 .border{
   &--bottom{
@@ -53,6 +53,7 @@ h3{ font-size: 32px; margin-top: 100px; }
 }
 
 a{
+  font-family: $font-main;
   text-decoration: none;
   color: $text-color;
   transition: 0.3s ease-out;
@@ -69,8 +70,8 @@ a{
 
 .card, .card1{
   position: relative;
-  height: auto;
-  max-width: 640px;
+  height: 427px;
+  width: 640px;
   background-color: $background-dark;
   border-radius: 20px;
   margin: 0 auto 100px;
@@ -98,13 +99,15 @@ a{
 .section2{
   background-color: $background-light;
   width: 800px;
-  height: auto;
+  height: 500px;
   display: flex;
   justify-content: space-between;
   gap: 4px;
   border-radius: 20px;
-  margin-bottom: 100px;
-  padding: 20px;
+  margin: 40px auto 100px;
+  display: flex;
+  gap: 10px;
+  
 }
 
 .grid--div {
@@ -118,8 +121,11 @@ a{
   border: none;
   cursor: pointer;
   font-size: 16px;
-  border-radius: 5px;
+  border-radius:10px 10px 0 0;
   text-align: center;
+  margin: 0 auto;
+  width: fit-content;
+  height: 40px;
 }
 .btn--suivant:hover{
   background-color: #838b83;
@@ -156,7 +162,7 @@ a{
   border: none;
   cursor: pointer;
   width: 264px;
-  height: auto;
+  height: 40px;
   border-radius: 10px 10px 0 0;
   font-size: 16px;
   font-family: $font-main;
@@ -166,6 +172,10 @@ a{
     color: #707070;
     text-decoration: underline;
   }
+}
+
+#data-container {
+  margin-top: 40px;
 }
 
 footer{
