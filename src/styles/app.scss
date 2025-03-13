@@ -28,16 +28,20 @@ body{
   }
 }
 
-.texte, .reponse {
-  height: auto;
-  max-width: 480px;
-  margin: 2px auto;
-}
+// .texte, .reponse {
+//   height: auto;
+//   max-width: 480px;
+//   margin: 2px auto;
+// }
 
 .texte--contenu{
   width: fit-content;
   margin: 40px auto;
   font-size: 32px;
+  
+  @include responsive ('tablet'){
+    font-size: 28px;
+  }
 }
 
 .section1, .text-contenu {

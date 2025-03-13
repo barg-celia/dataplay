@@ -40,7 +40,7 @@
     align-items: stretch;
     position: relative; /* Permet au bouton en absolute de se positionner par rapport à cette div */
     margin: 0 auto 100px;
-    height: 427px;
+    height: 450px;
     width: 640px;
     padding: 2rem;
     background-color: black;
@@ -49,8 +49,8 @@
 
     @include responsive ('tablet'){
         width: calc(100dvw - 160px);
-        margin: 0 auto;
-        padding: 0;
+        margin: 0 auto 60px;
+        padding:0 20px;
       }
 
     .card--text{
