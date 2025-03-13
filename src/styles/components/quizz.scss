@@ -5,8 +5,12 @@
 
     p {
         margin:40px 0;
+        
     }
     .question{
         text-align: center;
+        @include responsive ('tablet'){
+            font-size: 20px;
+        }
     }
 }

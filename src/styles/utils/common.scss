@@ -24,14 +24,6 @@
   }
 }
 
-.texte--contenu{
-    width: fit-content;
-    margin: 40px auto;
-    font-size: 32px;
-    text-align: center;
-}
-  
-
 .card {
     display: flex;
     flex-direction: column;
@@ -63,11 +55,15 @@
     margin-top: 300px;
 
     @include responsive ('tablet'){
-        margin: 150px auto 0 ;
+        margin: 200px auto 0 ;
         p{
             text-align: center;
+            font-size: 23px;
+            @include responsive ('mobile'){
+                font-size: 20px;
+            }
         }
-    }
+    } 
 }
 
 .no-wrap {
