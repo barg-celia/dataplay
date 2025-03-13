@@ -312,7 +312,7 @@
  ],
 
 
- "Instagram": [
+ "instagram": [
   {
     "id": 1,
     "question": "Combien de temps passes-tu sur Instagram chaque jour ?",
@@ -606,7 +606,7 @@
   ],
 
 
-  "Facebook": [
+  "facebook": [
     {
       "id": 1,
       "question": "Combien de temps passes-tu sur Facebook chaque jour ?",

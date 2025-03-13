@@ -91,56 +91,84 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    let questionsData = [];
-    let currentQuestionIndex = 0; // Index de la question affichée
+  let questionsData = [];
+  let currentQuestionIndex = 0;
+  let selectedNetwork = "";
 
-    fetch("assets/json/questions.json")
-        .then(response => response.json())
-        .then(data => {
-            questionsData = data.questions;
-            displayQuestion(questionsData[currentQuestionIndex]);
-        })
+  // ✅ Gestion du clic sur les icônes
+  document.querySelectorAll('.reseaux').forEach(reseau => {
+      reseau.addEventListener('click', function () {
+          if (reseau.classList.contains('discord')) {
+              selectedNetwork = "discord";
+          } else if (reseau.classList.contains('instagram')) {
+              selectedNetwork = "instagram";
+          } else if (reseau.classList.contains('facebook')) {
+              selectedNetwork = "facebook";
+          }
 
-    function displayQuestion(question) {
-        const totalQuestions = questionsData.length;
-        if (currentQuestionIndex >= totalQuestions) {
-            alert("Fin du questionnaire ! 🎉");
-            currentQuestionIndex = 0; // Réinitialiser le quiz
-        }
+          console.log(`✅ Réseau sélectionné : ${selectedNetwork}`);
 
-        const card = document.querySelector(".card1");
+          // ✅ Charger les questions du réseau sélectionné depuis le fichier JSON
+          fetch('assets/json/questions.json')
+              .then(response => {
+                  if (!response.ok) throw new Error(`Erreur HTTP : ${response.status}`);
+                  return response.json();
+              })
+              .then(data => {
+                  if (data[selectedNetwork] && data[selectedNetwork].questions.length > 0) {
+                      questionsData = data[selectedNetwork].questions;
+                      currentQuestionIndex = 0;
+                      displayQuestion(questionsData[currentQuestionIndex]);
+                  } else {
+                      alert(`⚠️ Aucune question disponible pour le réseau "${selectedNetwork}"`);
+                  }
+              })
+              .catch(error => console.error(`❌ Erreur lors du chargement du fichier JSON : ${error}`));
 
-        // Générer le HTML avec la question, les 4 options et la barre de progression
-        card.innerHTML = `
-            <p class="question">${question.question}</p>
-            <div class="options">
-                ${Object.entries(question.options).map(([key, option]) => 
-                    `<label>
-                        <input type="radio" name="response" value="${key}">
-                        ${option}
-                    </label><br>`
-                ).join('')}
-            </div>
-            <button class="btn--prochain">Suivant</button>
-            <div class="progress--container1">
-                <div class="progress--bar1" style="width: ${(currentQuestionIndex / totalQuestions) * 100}%;"></div>
-            </div>
-            
-        `;
+          // ✅ Masquer la sélection après le choix
+          document.querySelector('.choix').style.display = 'none';
+      });
+  });
 
-        // Réattacher l'événement du bouton "prochain"
-        document.querySelector(".btn--prochain").addEventListener("click", function () {
-            currentQuestionIndex++; // Passer à la question suivante
-            if (currentQuestionIndex < totalQuestions) {
-                displayQuestion(questionsData[currentQuestionIndex]);
-            } else {
-                alert("Fin du questionnaire ! 🎉");
-                currentQuestionIndex = 0;
-                displayQuestion(questionsData[currentQuestionIndex]); // Recommence
-            }
-        });
-    }
-});
+  // ✅ Fonction pour afficher la question
+  function displayQuestion(question) {
+      if (!question) {
+          console.error("❌ Aucune question à afficher !");
+          return;
+      }
+
+      const totalQuestions = questionsData.length;
+      const card = document.querySelector(".card1");
+
+      // ✅ Affichage de la question et des options
+      card.innerHTML = `
+          <p class="question">${question.question}</p>
+          <div class="options">
+              ${Object.entries(question.options).map(([key, option]) => 
+                  `<label>
+                      <input type="radio" name="response" value="${key}">
+                      ${option}
+                  </label><br>`
+              ).join('')}
+          </div>
+          <div class="progress--container1">
+              <div class="progress--bar1" style="width: ${(currentQuestionIndex / totalQuestions) * 100}%;"></div>
+          </div>
+      `;
+
+      // ✅ Suppression des anciens gestionnaires pour éviter les doublons
+      const nextButton = document.querySelector(".btn--prochain");
+      nextButton.replaceWith(nextButton.cloneNode(true));
+      document.querySelector(".btn--prochain").addEventListener("click", handleNextQuestion);
+  }
+
+  // ✅ Fonction pour passer à la question suivante
+  function handleNextQuestion() {
+      currentQuestionIndex++;
+      if (currentQuestionIndex
+
+
+
 
 
 
