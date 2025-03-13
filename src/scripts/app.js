@@ -116,11 +116,23 @@ document.addEventListener("DOMContentLoaded", function () {
 fetch('assets/json/data.json')
   .then(response => response.json())
   .then(data => {
+    // Affichage initial des données de consommation énergétique
+    displayEnergyConsumption(data);
+
     // Ajouter un gestionnaire d'événements pour chaque bouton
-    document.querySelector('.btn--conso').addEventListener('click', () => displayEnergyConsumption(data));
-    document.querySelector('.btn--utili').addEventListener('click', () => displayUserCount(data));
-    document.querySelector('.btn--poll').addEventListener('click', () => displayPollution(data));
-  })
+    document.querySelector('.btn--conso').addEventListener('click', () => {
+      displayEnergyConsumption(data);
+      setActiveButton('.btn--conso');
+    });
+    document.querySelector('.btn--utili').addEventListener('click', () => {
+      displayUserCount(data);
+      setActiveButton('.btn--utili');
+    });
+    document.querySelector('.btn--poll').addEventListener('click', () => {
+      displayPollution(data);
+      setActiveButton('.btn--poll');
+    });
+  });
 
 // Fonction pour afficher la consommation énergétique
 function displayEnergyConsumption(data) {
@@ -134,13 +146,15 @@ function displayEnergyConsumption(data) {
         <p>${platformData.Valeur}</p>
         <p>Équivalences:</p>
         <ul>
-          <li>Recharger ${platformData.Équivalences.Recharge_smartphone.Nombre_de_charges} fois un smarphones par jour </li> Ou
+          <li>Recharger ${platformData.Équivalences.Recharge_smartphone.Nombre_de_charges} fois un smartphone par jour</li> 
           <li>Prendre ${platformData.Équivalences.Douches.Nombre_de_douches} douches de ${platformData.Équivalences.Douches.Durée_par_douche}</li>
         </ul>
       `;
     }
   }
-  document.getElementById('data--container').innerHTML = html;
+  // On ajoute les données sous les boutons existants, sans les supprimer
+  const container = document.getElementById('data--container');
+  container.insertAdjacentHTML('beforeend', html);
 }
 
 // Fonction pour afficher le nombre d'utilisateurs
@@ -158,7 +172,8 @@ function displayUserCount(data) {
       `;
     }
   }
-  document.getElementById('data--container').innerHTML = html;
+  const container = document.getElementById('data--container');
+  container.insertAdjacentHTML('beforeend', html);
 }
 
 // Fonction pour afficher la pollution
@@ -179,6 +194,6 @@ function displayPollution(data) {
       `;
     }
   }
-  document.getElementById('data--container').innerHTML = html;
+  const container = document.getElementById('data--container');
+  container.insertAdjacentHTML('beforeend', html);
 }
-
