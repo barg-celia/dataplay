@@ -25,10 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const situation = situations[randomIndex];
 
         const card = document.querySelector(".card");
-        if (!card) {
-            console.error("Erreur : Élément .card non trouvé dans le HTML.");
-            return;
-        }
 
         // Générer le HTML avec les options et la barre de progression
         card.innerHTML = `
@@ -81,10 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         const card = document.querySelector(".card1");
-        if (!card) {
-            console.error("Erreur : Élément .card non trouvé dans le HTML.");
-            return;
-        }
 
         // Générer le HTML avec la question, les 4 options et la barre de progression
         card.innerHTML = `
