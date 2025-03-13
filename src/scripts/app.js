@@ -94,94 +94,65 @@ document.addEventListener("DOMContentLoaded", function () {
     let selectedNetwork = "";
 
     // Gestion du clic sur les icônes
+    document.querySelectorAll('.reseaux').forEach(reseau => {
+      reseau.addEventListener('click', function () {
+          let tempSelection;
+          if (reseau.classList.contains('discord')) {
+              tempSelection = "discord";
+          } else if (reseau.classList.contains('instagram')) {
+              tempSelection = "instagram";
+          } else if (reseau.classList.contains('facebook')) {
+              tempSelection = "facebook";
+          }
+          console.log(`Réseau sélectionné : ${tempSelection}`);
 
-  document.querySelectorAll('.reseaux').forEach(reseau => {
-
-    reseau.addEventListener('click', function () {
-
-        if (reseau.classList.contains('discord')) {
-
-            selectedNetwork = "discord";
-
-        } else if (reseau.classList.contains('instagram')) {
-
-            selectedNetwork = "instagram";
-
-        } else if (reseau.classList.contains('facebook')) {
-
-            selectedNetwork = "facebook";
-
-        }
-        console.log(`Réseau sélectionné : ${selectedNetwork}`);
-        // Charger les questions du réseau sélectionné depuis le fichier JSON
-
-        fetch('assets/json/questions.json')
-
-            .then(response => response.json())
-
-            .then(data => {
-
-                questionsData = data[selectedNetwork].questions;
-
-                currentQuestionIndex = 0; // Réinitialiser l'index du quiz
-
-                displayQuestion(questionsData[currentQuestionIndex]);
-
-            });
-             // Masquer la sélection après le choix
-
-          document.querySelector('.choix').style.display = 'none';
-
-        });
-  
+          // Gestion du bouton prochain
+          document.querySelector(".btn--prochain").addEventListener("click", function () {
+            const selectedNetwork = tempSelection;
+            if (tempSelection) {
+                // Charger les questions du réseau sélectionné depuis le fichier JSON
+                fetch('assets/json/questions.json')
+                .then(response => response.json())
+                .then(data => {
+                    questionsData = data[selectedNetwork];
+                    console.log(questionsData);
+                    currentQuestionIndex = 0; // Réinitialiser l'index du quiz
+                    displayQuestion(questionsData[currentQuestionIndex]);
+                });
+                // Masquer la sélection après le choix
+                document.querySelector('.choix').style.display = 'none';
+            } else {
+                alert("Merci de sélectionner un réseau !");
+            }
+          });
+      });
     });
     function displayQuestion(question) {
-  
         const totalQuestions = questionsData.length;
-  
+
         if (currentQuestionIndex >= totalQuestions) {
-  
             alert("Fin du questionnaire ! 🎉");
-  
             currentQuestionIndex = 0;
-  
             displayQuestion(questionsData[currentQuestionIndex]);
-  
         }
         const card = document.querySelector(".card1");
         card.innerHTML = `
-  
             <p class="question">${question.question}</p>
-  
             <div class="options">
-  
                 ${Object.entries(question.options).map(([key, option]) => 
-  
                     `<label>
-  
                         <input type="radio" name="response" value="${key}">
-  
                         ${option}
-  
                     </label><br>`
-  
                 ).join('')}
-  
             </div>
-  
             <button class="btn--prochain">Suivant</button>
-  
             <div class="progress--container1">
-  
                 <div class="progress--bar1" style="width: ${(currentQuestionIndex / totalQuestions) * 100}%;"></div>
-  
             </div>
-  
         `;
         // Gestion du bouton "Suivant"
-  
         document.querySelector(".btn--prochain").addEventListener("click", function () {
-  
             currentQuestionIndex++;
             if (currentQuestionIndex < totalQuestions) {
                 displayQuestion(questionsData[currentQuestionIndex]);

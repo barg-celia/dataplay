@@ -2,16 +2,18 @@
     &__content {
         background-color: $background-data;
         width: calc(100dvw - 200px);
-        height: 790px;
+        height: fit-content;
+        padding-bottom: 60px;
         border-radius: 20px;
         margin: 40px auto 100px;
 
         @include responsive ('tablet'){
             width: calc(100dvw - 160px);
             margin: 0 auto  60px;
-            height: 1500px;
+            height: fit-content;
+            padding-bottom: 40px;
           }
-        
+          
         &__nav {
             display: flex;
             justify-content: space-between;
@@ -37,7 +39,7 @@
 .conso--2020__content, .conso--2023__content, .users--2020__content, .users--2023__content, .pollution--2020__content, .pollution--2023__content{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items:flex-start;
     text-align: center;
 }
 .conso--2020__Discord, .conso--2020__Instagram, .conso--2020__Facebook, .conso--2023__Discord, .conso--2023__Instagram, .conso--2023__Facebook, .users--2020__Discord, .users--2020__Instagram, .users--2020__Facebook, .users--2023__Discord, .users--2023__Instagram, .users--2023__Facebook, .pollution--2020__Discord, .pollution--2020__Instagram, .pollution--2020__Facebook, .pollution--2023__Discord, .pollution--2023__Instagram, .pollution--2023__Facebook{
