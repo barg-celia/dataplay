@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 ).join('')}
             </div>
             <button class="btn--suivant">Suivant</button>
-            <div class="progress-container">
-                <div class="progress-bar" style="width: ${(questionCount / maxQuestions) * 100}%;"></div>
+            <div class="progress--container">
+                <div class="progress--bar" style="width: ${(questionCount / maxQuestions) * 100}%;"></div>
             </div>
             
         `;
@@ -90,8 +90,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 ).join('')}
             </div>
             <button class="btn--prochain">Suivant</button>
-            <div class="progress-container1">
-                <div class="progress-bar1" style="width: ${(currentQuestionIndex / totalQuestions) * 100}%;"></div>
+            <div class="progress--container1">
+                <div class="progress--bar1" style="width: ${(currentQuestionIndex / totalQuestions) * 100}%;"></div>
             </div>
             
         `;
