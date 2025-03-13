@@ -220,10 +220,14 @@ function displayEnergyConsumption(data) {
 
   container.innerHTML = '';
   for (let year in data.Consommation_énergétique) {
-    html += `<p class="p_titre">Consommation énergétique - ${year}</p>`;
+    html += `
+        <p class="p_titre">Consommation énergétique - ${year}</p>
+        <div class="conso--${year.split(' ')[1]}__content">
+    `;
     for (let platform in data.Consommation_énergétique[year]) {
       const platformData = data.Consommation_énergétique[year][platform];
       html += `
+        <div class="conso--${year.split(' ')[1]}__${platform}">
         <p class="p_reseaux">${platform}</p>
         <p class="p_gras">${platformData.Valeur}</p>
         <p class="p">Équivalences:</p>
@@ -231,8 +235,10 @@ function displayEnergyConsumption(data) {
           <li class="p">Recharger ${platformData.Équivalences.Recharge_smartphone.Nombre_de_charges} fois un smartphone par jour</li> 
           <li class="p">Prendre ${platformData.Équivalences.Douches.Nombre_de_douches} douches de ${platformData.Équivalences.Douches.Durée_par_douche}</li>
         </ul>
+        </div>
       `;
     }
+    html += `</div>`;
   }
   container.insertAdjacentHTML('beforeend', html);
 }
@@ -246,16 +252,22 @@ function displayUserCount(data) {
   container.innerHTML = '';
 
   for (let year in data.Nombre_utilisateurs) {
-    html += `<p class="p_titre">Nombre d'utilisateurs - ${year}</p>`;
+    html += `
+        <p class="p_titre">Nombre d'utilisateurs - ${year}</p>
+        <div class="users--${year.split(' ')[1]}__content">
+    `;
     for (let platform in data.Nombre_utilisateurs[year]) {
       const platformData = data.Nombre_utilisateurs[year][platform];
       html += `
+        <div class="users--${year.split(' ')[1]}__${platform}">
         <p class="p_reseaux">${platform}</p>
         <p class="p_gras">${platformData.valeur}</p>
         <p class="p">Équivalences:</p>
         <p class="p">${platformData.Équivalences.popu_belge} fois la population Belge</p>
+        </div>
       `;
     }
+    html += `</div>`;
   }
   container.insertAdjacentHTML('beforeend', html);  // Ajoute les nouvelles données sous les boutons existants
 }
@@ -269,10 +281,14 @@ function displayPollution(data) {
   container.innerHTML = '';
 
   for (let year in data.Pollution_data_center) {
-    html += `<p class="p_titre">Pollution des data centers - ${year}</p>`;
+    html += `
+        <p class="p_titre">Pollution des data centers - ${year}</p>
+        <div class="pollution--${year.split(' ')[1]}__content">
+    `;
     for (let platform in data.Pollution_data_center[year]) {
       const platformData = data.Pollution_data_center[year][platform];
       html += `
+        <div class="pollution--${year.split(' ')[1]}__${platform}">
         <p class="p_reseaux">${platform}</p>
         <p class="p_gras">${platformData.CO2}</p>
         <p class="p">Équivalences :</p>
@@ -280,8 +296,10 @@ function displayPollution(data) {
           <li class="p">${platformData.Équivalences.Tours_Terre_voiture} Tours de la Terre en voiture</li>
           <li class="p">${platformData.Équivalences.Steaks_300g} cuisson de steaks de 300g par jour</li>
         </ul>
+        </div>
       `;
     }
+    html += `</div>`;
   }
   container.insertAdjacentHTML('beforeend', html);  // Ajoute les nouvelles données sous les boutons existants
 }
