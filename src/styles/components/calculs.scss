@@ -15,7 +15,7 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 8rem;
 
     div {
         flex: 1;
@@ -30,6 +30,15 @@
     .icone{
         width: 40px;
         height: 40px;
+    }
+
+    p{
+        font-size: 16px;
+        width: fit-content;
+    }
+
+    .reseaux{
+        width: min-content;
     }
 }
 
