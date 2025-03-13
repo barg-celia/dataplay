@@ -1,0 +1,38 @@
+.section-data {
+    &__content {
+        background-color: $background-data;
+        width: 800px;
+        height: 500px;
+        border-radius: 20px;
+        margin: 40px auto 0;
+        
+        &__nav {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    #data-container {
+        background-color: $background-data;
+    }
+}
+
+  
+.btn--suivant, .btn__actif{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius:10px 10px 0 0;
+    text-align: center;
+    width: fit-content;
+    height: 40px;
+}
+
+.btn--suivant:hover{
+    background-color: #838b83;
+}
+  
+.btn--suivant{
+    border-radius: 10px;
+}
