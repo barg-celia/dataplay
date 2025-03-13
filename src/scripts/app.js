@@ -156,63 +156,72 @@ fetch('assets/json/data.json')
 // Fonction pour afficher la consommation énergétique
 function displayEnergyConsumption(data) {
   let html = '';
+  const container = document.getElementById('data--container');
+
+  container.innerHTML = '';
   for (let year in data.Consommation_énergétique) {
     html += `<p class="p_titre">Consommation énergétique - ${year}</p>`;
     for (let platform in data.Consommation_énergétique[year]) {
       const platformData = data.Consommation_énergétique[year][platform];
       html += `
-        <p class="p_resaux">${platform}</p>
-        <p>${platformData.Valeur}</p>
-        <p>Équivalences:</p>
+        <p class="p_reseaux">${platform}</p>
+        <p class="p_gras">${platformData.Valeur}</p>
+        <p class="p">Équivalences:</p>
         <ul>
-          <li>Recharger ${platformData.Équivalences.Recharge_smartphone.Nombre_de_charges} fois un smartphone par jour</li> 
-          <li>Prendre ${platformData.Équivalences.Douches.Nombre_de_douches} douches de ${platformData.Équivalences.Douches.Durée_par_douche}</li>
+          <li class="p">Recharger ${platformData.Équivalences.Recharge_smartphone.Nombre_de_charges} fois un smartphone par jour</li> 
+          <li class="p">Prendre ${platformData.Équivalences.Douches.Nombre_de_douches} douches de ${platformData.Équivalences.Douches.Durée_par_douche}</li>
         </ul>
       `;
     }
   }
-  // On ajoute les données sous les boutons existants, sans les supprimer
-  const container = document.getElementById('data--container');
   container.insertAdjacentHTML('beforeend', html);
 }
 
 // Fonction pour afficher le nombre d'utilisateurs
 function displayUserCount(data) {
   let html = '';
+  const container = document.getElementById('data--container');
+
+  // Effacer les anciennes données avant d'ajouter les nouvelles
+  container.innerHTML = '';
+
   for (let year in data.Nombre_utilisateurs) {
     html += `<p class="p_titre">Nombre d'utilisateurs - ${year}</p>`;
     for (let platform in data.Nombre_utilisateurs[year]) {
       const platformData = data.Nombre_utilisateurs[year][platform];
       html += `
-        <p class="p_resaux">${platform}</p>
-        <p>Nombre d'utilisateurs: ${platformData.valeur}</p>
-        <p>Équivalences:</p>
-        <p>${platformData.Équivalences.popu_belge} fois la population Belge </p>
+        <p class="p_reseaux">${platform}</p>
+        <p class="p_gras">${platformData.valeur}</p>
+        <p class="p">Équivalences:</p>
+        <p class="p">${platformData.Équivalences.popu_belge} fois la population Belge</p>
       `;
     }
   }
-  const container = document.getElementById('data--container');
-  container.insertAdjacentHTML('beforeend', html);
+  container.insertAdjacentHTML('beforeend', html);  // Ajoute les nouvelles données sous les boutons existants
 }
 
 // Fonction pour afficher la pollution
 function displayPollution(data) {
   let html = '';
+  const container = document.getElementById('data--container');
+
+  // Effacer les anciennes données avant d'ajouter les nouvelles
+  container.innerHTML = '';
+
   for (let year in data.Pollution_data_center) {
     html += `<p class="p_titre">Pollution des data centers - ${year}</p>`;
     for (let platform in data.Pollution_data_center[year]) {
       const platformData = data.Pollution_data_center[year][platform];
       html += `
-          <p class="p_resaux">${platform}</p>
-          <p>${platformData.CO2} émis</p>
-          <p>Équivalences :</p>
-          <ul>
-            <li>${platformData.Équivalences.Tours_Terre_voiture} Tours de la Terre en voiture</li>
-            <li>${platformData.Équivalences.Steaks_300g} cuisson de steaks de 300g par jour</li>
-          </ul>
+        <p class="p_reseaux">${platform}</p>
+        <p class="p_gras">${platformData.CO2}</p>
+        <p class="p">Équivalences :</p>
+        <ul>
+          <li class="p">${platformData.Équivalences.Tours_Terre_voiture} Tours de la Terre en voiture</li>
+          <li class="p">${platformData.Équivalences.Steaks_300g} cuisson de steaks de 300g par jour</li>
+        </ul>
       `;
     }
   }
-  const container = document.getElementById('data--container');
-  container.insertAdjacentHTML('beforeend', html);
+  container.insertAdjacentHTML('beforeend', html);  // Ajoute les nouvelles données sous les boutons existants
 }

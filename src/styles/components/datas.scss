@@ -1,8 +1,8 @@
 .section-data {
     &__content {
         background-color: $background-data;
-        width: 800px;
-        height: 500px;
+        width: 1000px;
+        height: 790px;
         border-radius: 20px;
         margin: 40px auto 0;
         
@@ -14,10 +14,28 @@
 
     #data-container {
         background-color: $background-data;
+        display: flex;
     }
 }
 
-  
+.p_titre, .p_reseaux{
+    font-size: 23px;
+    color: black;
+    margin: 10px;
+}
+.p_titre{
+    text-align: center;
+}
+.p{
+    color: black;
+    font-size: 16px;
+    margin: 10px;
+}
+.p_gras{
+    font-weight: bolder;
+    color: black;
+    margin: 10px;
+}
 .btn--suivant, .btn__actif{
     padding: 10px 20px;
     border: none;
@@ -36,3 +54,4 @@
 .btn--suivant{
     border-radius: 10px;
 }
+
