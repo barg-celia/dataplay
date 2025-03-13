@@ -6,6 +6,7 @@
 
         &__links {
             width: 100%;
+            height: fit-content;
         }
     }
 }
@@ -15,7 +16,7 @@
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 
     div {
         flex: 1;
@@ -30,15 +31,21 @@
     .icone{
         width: 40px;
         height: 40px;
+        margin: 0;
     }
 
     p{
         font-size: 16px;
         width: fit-content;
+        text-align: center;
     }
 
     .reseaux{
         width: min-content;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 }
 
@@ -54,4 +61,5 @@
     cursor: pointer;
     font-size: 16px;
     align-items: center;
+    margin-bottom: 4rem;
   }
