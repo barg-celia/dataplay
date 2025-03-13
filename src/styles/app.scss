@@ -38,7 +38,7 @@ body{
   width: fit-content;
   margin: 40px auto;
   font-size: 32px;
-  
+
   @include responsive ('tablet'){
     font-size: 28px;
   }
@@ -310,6 +310,14 @@ footer{
         background-color: #FFFFFF;
     }
 }
+  .link{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+      img{
+        width:45%;
+      }
+  }
   footer{
     display: flex;
     margin:40px auto;

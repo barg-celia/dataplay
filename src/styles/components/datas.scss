@@ -1,7 +1,7 @@
 .section-data {
     &__content {
         background-color: $background-data;
-        width: 1000px;
+        width: calc(100dvw - 200px);
         height: 790px;
         border-radius: 20px;
         margin: 40px auto 100px;

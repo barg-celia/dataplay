@@ -15,7 +15,7 @@
         }
     }
     @else if $media == 'tablet'{
-        @media (max-width: 750px){
+        @media (max-width: 950px){
             @content;
         }
     }
