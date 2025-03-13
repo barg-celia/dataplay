@@ -153,15 +153,31 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
         // Gestion du bouton "Suivant"
         document.querySelector(".btn--prochain").addEventListener("click", function () {
-            currentQuestionIndex++;
-            if (currentQuestionIndex < totalQuestions) {
-                displayQuestion(questionsData[currentQuestionIndex]);
+          function displayFinalMessage() {
+            let message = "";
+            if (score >= 16) {
+                message = "Bravo, tu es sur la bonne voie ! Tu as bien compris les enjeux et tu fais des choix éclairés. Continue ainsi pour un impact encore plus positif !";
+            } else if (score >= 10) {
+                message = "Tu es sur la bonne voie, un petit effort supplémentaire et ce sera parfait.";
             } else {
-                alert("Fin du questionnaire ! 🎉");
-                currentQuestionIndex = 0;
-                displayQuestion(questionsData[currentQuestionIndex]); // Recommence
+                message = "Oups, il semble que tu aies encore quelques notions à revoir ! Mais pas de panique, chaque erreur est une leçon pour avancer. Continue à t'informer !";
             }
-        });
+        
+            const card = document.querySelector(".card1");
+            card.innerHTML = `
+                <p class="final-message">Quiz terminé ! 🎉</p>
+                <p>Ton score : <strong>${score} / 20</strong></p>
+                <p>${message}</p>
+                <button class="btn--rejouer">Rejouer</button>
+            `;
+        
+            document.querySelector(".btn--rejouer").addEventListener("click", () => {
+                score = 0;
+                questionCount = 0;
+                displayRandomSituation(situationsData);
+            });
+        }
+        })        
     }
 });
 // Récupérer les données JSON depuis le fichier
