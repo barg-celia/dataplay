@@ -1,62 +1,94 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", function () {
-    let situationsData = [];
-    let questionCount = 0; // Nombre de questions affichées
-    const maxQuestions = 10; // Total de questions avant reset
+  let situationsData = [];
+  let questionCount = 0;
+  const maxQuestions = 10;
+  let score = 0;
 
-    fetch("assets/json/situations.json")
-        .then(response => response.json())
-        .then(data => {
-            situationsData = data.situations;
-            displayRandomSituation(situationsData);
-        })
+  fetch("assets/json/situations.json")
+      .then(response => response.json())
+      .then(data => {
+          situationsData = data.situations;
+          displayRandomSituation(situationsData);
+      });
 
-    function displayRandomSituation(situations) {
-        if (questionCount >= maxQuestions) {
-            alert("Fin du quizz ! 🎉"); 
-            questionCount = 0; // Réinitialise le compteur
-        }
+  function displayRandomSituation(situations) {
+      if (questionCount >= maxQuestions) {
+          displayFinalMessage();
+          return;
+      }
 
-        questionCount++; // Incrémente le compteur de questions
-        updateProgressBar(); // Met à jour la barre de progression
+      questionCount++;
+      updateProgressBar();
 
-        const randomIndex = Math.floor(Math.random() * situations.length);
-        const situation = situations[randomIndex];
+      const randomIndex = Math.floor(Math.random() * situations.length);
+      const situation = situations[randomIndex];
 
-        const card = document.querySelector(".card");
+      const card = document.querySelector(".card");
+      card.innerHTML = `
+          <p class="question">${situation.question}</p>
+          <div class="options">
+              ${Object.entries(situation.options).map(([key, option]) =>
+                  `<label>
+                      <input type="radio" class="square-radio" name="response" value="${key}">
+                      ${option}
+                  </label><br>`
+              ).join('')}
+          </div>
+          <button class="btn--suivant">Suivant</button>
+          <div class="progress--container">
+              <div class="progress--bar" style="width: ${(questionCount / maxQuestions) * 100}%;"></div>
+          </div>
+      `;
 
-        // Générer le HTML avec les options et la barre de progression
-        card.innerHTML = `
-            <p class="question">${situation.question}</p>
-            <div class="options">
-                ${Object.entries(situation.options).map(([key, option]) => 
-                    `<label>
-                        <input type="radio" class="square-radio" name="response" value="${key}">
-                        ${option}
-                    </label><br>`
-                ).join('')}
-            </div>
-            <button class="btn--suivant">Suivant</button>
-            <div class="progress--container">
-                <div class="progress--bar" style="width: ${(questionCount / maxQuestions) * 100}%;"></div>
-            </div>
-            
-        `;
+      // Gestion du bouton "Suivant"
+      document.querySelector(".btn--suivant").addEventListener("click", function () {
+          const selectedOption = document.querySelector('input[name="response"]:checked');
+          if (selectedOption) {
+              // Ajouter le score basé sur la réponse choisie
+              const responseKey = selectedOption.value;
+              score += situation.réponses[responseKey] || 0;
+              displayRandomSituation(situations);
+          } else {
+              alert("Merci de sélectionner une réponse !");
+          }
+      });
+  }
 
-        // Réattacher l'événement du bouton "Suivant"
-        document.querySelector(".btn--suivant").addEventListener("click", function () {
-            displayRandomSituation(situations);
-        });
-    }
+  function updateProgressBar() {
+      const progressBar = document.querySelector(".progress--bar");
+      if (progressBar) {
+          progressBar.style.width = `${(questionCount / maxQuestions) * 100}%`;
+      }
+  }
 
-    function updateProgressBar() {
-        const progressBar = document.querySelector(".progress-bar");
-        if (progressBar) {
-            progressBar.style.width = `${(questionCount / maxQuestions) * 100}%`;
-        }
-    }
+  function displayFinalMessage() {
+      let message = "";
+      if (score >= 8) {
+          message = "Bravo, tu es sur la bonne voie ! Tu as bien compris les enjeux et tu fais des choix éclairés. Continue ainsi pour un impact encore plus positif !";
+      } else if (score >= 5) {
+          message = "Tu es sur la bonne voie, un petit effort supplémentaire et ce sera parfait.";
+      } else {
+          message = "Oups, il semble que tu aies encore quelques notions à revoir ! Mais pas de panique, chaque erreur est une leçon pour avancer. Continue à t'informer !";
+      }
+
+      const card = document.querySelector(".card");
+      card.innerHTML = `
+          <p class="final-message">Quiz terminé ! 🎉</p>
+          <p>Ton score : <strong>${score} / ${maxQuestions}</strong></p>
+          <p>${message}</p>
+          <button class="btn--rejouer">Rejouer</button>
+      `;
+
+      document.querySelector(".btn--rejouer").addEventListener("click", () => {
+          score = 0;
+          questionCount = 0;
+          displayRandomSituation(situationsData);
+      });
+  }
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
     let questionsData = [];
