@@ -1,0 +1,55 @@
+@import '../utils/mixins';
+
+.background-img {
+    background-image: url("../assets/images/rectangle.jpg");
+    position: fixed;  /* Fixe l'image en arrière-plan */
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100%;  /* Largeur = 100% de la fenêtre */
+    height: 100%; /* Hauteur = 100% de la fenêtre */
+    z-index: -1; /* Place l'image derrière les autres éléments */
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+
+  @include responsive (740px)
+}
+
+.texte--contenu{
+    width: fit-content;
+    margin: 40px auto;
+    font-size: 32px;
+}
+  
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    position: relative; /* Permet au bouton en absolute de se positionner par rapport à cette div */
+    margin: 0 auto;
+    height: 427px;
+    width: 640px;
+    padding: 2rem;
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+
+.border--bottom {
+    padding-bottom: 100px;
+    border-bottom: 2px solid rgb(178, 182, 185);
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: calc(100%/3);
+}

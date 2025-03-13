@@ -10,55 +10,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Aldrich&family=Jersey+25&family=Nova+Square&family=Platypi:ital,wght@0,300..800;1,300..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=REM:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="img--background"></div>
-  <header>
-    <div class="scroll">
-      <div class="header container ">
-        <h1>CleanByte</h1>
-        <h2>Bienvenue dans votre premier site éco&nbsp;-&nbsp;responsable !</h2>
-        <p>Grâce à ce site, nous espérons vous faire prendre conscience que votre plus grande passion est aussi votre plus grand problème !</p>
-      </div>
+  <div class="background-img"></div>
+
+  <header class="header container">
+    <div class="header__presentation">
+      <h1>CleanByte</h1>
+      <h2>Bienvenue dans votre premier site éco&nbsp;-&nbsp;responsable !</h2>
+      <p>Grâce à ce site, nous espérons vous faire prendre conscience que votre plus grande passion est aussi votre plus grand problème !</p>
     </div>
-    <div class="link--header container border--bottom">
+    <div class="header__links border--bottom">
       <a href="#quiz">Quizz</a>
       <a href="#données">Données</a>
       <a href="#calcul">Calcul</a>
     </div>
   </header>
-  <main class="container">
-    <div class="section1">
+
+  <main class="main container">
+    <section class="section-quizz border--bottom">
       <h3 id="quiz">Quizz</h3>
       <p class="texte--contenu">Réponds à ces 10 questions afin de voir afin de voir si ton comportement face aux réseaux est responsable ou non !</p>
       <div class="card">
-          </div>
+
+      </div>
+    </section>
+    
+    <section class="section-data border--bottom">
+      <h3>Quelques données </h3>
+      <p class="texte--contenu">Voici quelques données glaçantes sur Instagram, Discord et Facebook.</p>
+      <div class="section-data__content">
+        <nav class="section-data__content__nav">
+          <button class="btn__actif btn--conso">Consommation énérgétique</button>
+          <button class="btn btn--utili">Nombres d'utilisateurs</button>
+          <button class="btn btn--poll">Pollution des data centers</button>
+        </nav>
+        <div id="data--container">
         </div>
       </div>
-    </div>
-    <div class="border--bottom "></div>
-    <h3 id="données">Quelques données </h3>
-    <p class="texte--contenu">Voici quelques données glaçantes sur Instagram, Discord et Facebook.</p>
-    <div class="section2" class="container border-bottom">
-      <div id="data--container">
-        <button class="btn__actif btn--conso">Consommation énergétique</button>
-        <button class="btn btn--utili">Nombres d'utilisateurs</button>
-        <button class="btn btn--poll">Pollution des data centers</button>
-      </div>
-    </div>
-    <div class="border--bottom"></div>
-    <div class="section3">
+    </section>
+    
+    <section class="section-calculs border--bottom">
       <h3 id="calcul">Calcul</h3>
       <p class="texte--contenu">Viens découvrir ta production de CO&#8322; grâce à ces 20 questions.</p>
-      <div class="card1">
-        <div class="choix">
-          <img class="icone icone--discord" src="assets/images/discord.png" alt="logo de discord">
-          <img class="icone icone--insta" src="assets/images/instagram.png" alt="logo d'Instagram">
-          <img class="icone icone--facebook" src="assets/images/facebook.png" alt="logo de Facebook">
+      <div class="card">
+        <div class="card__links">
+          <div class="choix">
+            <img class="icone icone--discord" src="assets/images/discord.png" alt="logo de discord">
+            <img class="icone icone--insta" src="assets/images/instagram.png" alt="logo d'Instagram">
+            <img class="icone icone--facebook" src="assets/images/facebook.png" alt="logo de Facebook">
+          </div>
         </div>
         <button class="btn--prochain">Suivant</button>
       </div>
-    </div>
+    </section>
+
     <div class="link"></div><!--Mettre les liens vers des sites éco-resposables-->
-    <div class="border--bottom"></div>
   </main>
   <footer>
     <ul>
