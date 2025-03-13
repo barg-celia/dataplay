@@ -12,10 +12,16 @@
 }
 
 .container {
-  width: 1024px;
+  width: calc(100dvw - 200px);
   margin: 0 auto;
-
-  @include responsive (740px)
+    @include responsive ('tablet'){
+        width: calc(100dvw - 160px);
+        margin: 0 auto;
+    }
+  @include responsive ('mobile'){
+    width: calc(100dvw - 40px);
+    margin: 0 auto;
+  }
 }
 
 .texte--contenu{
@@ -41,6 +47,12 @@
     border-radius: 20px;
     border: 2px solid white;
 
+    @include responsive ('tablet'){
+        width: calc(100dvw - 160px);
+        margin: 0 auto;
+        padding: 0;
+      }
+
     .card--text{
         margin-bottom: 6rem;
     }
@@ -49,6 +61,17 @@
 .header__presentation{
     height: 100vh;
     margin-top: 300px;
+
+    @include responsive ('tablet'){
+        margin: 300px auto 0 ;
+        p{
+            text-align: center;
+        }
+    }
+}
+
+.no-wrap {
+    white-space: nowrap;
 }
 
 .border--bottom {

@@ -1,6 +1,22 @@
 
-@mixin responsive($size) {
-    @media screen and (max-width: $size) {
-        @content;
+// @mixin responsive($min, $max) {
+//     @media (min-width: $min) and (max-width: $max) {
+//         @content;
+//     }
+//     @media screen and (max-width: $max){
+//         @content;
+//     }
+// }
+
+@mixin responsive ($media) {
+    @if $media =='mobile'{
+        @media (max-width: 450px){
+            @content;
+        }
+    }
+    @else if $media == 'tablet'{
+        @media (max-width: 750px){
+            @content;
+        }
     }
 }
