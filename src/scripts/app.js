@@ -295,3 +295,16 @@ function displayPollution(data) {
   }
   container.insertAdjacentHTML('beforeend', html);  // Ajoute les nouvelles données sous les boutons existants
 }
+const navbar = document.querySelector('.link--header');
+let stickPosition = navbar.offsetTop;
+
+function addOrRemoveStickyClass() {
+  if(window.pageYOffset >= stickPosition) {
+    navbar.classList.add("sticky");
+  }else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+window.addEventListener('scroll', () => {addOrRemoveStickyClass()});
+window.addEventListener('resize', stickPosition = navbar.offsetTop);

@@ -18,6 +18,7 @@ body{
 .link--header{
   display: flex;
   justify-content: space-evenly;
+  z-index: 100;
 
   &__links {
     /* Vous pouvez jouer avec le margin ici pour ajuster la position des boutons
@@ -26,6 +27,15 @@ body{
     display: flex;
     justify-content: space-evenly;
   }
+  a{
+    padding-top: 20px;
+  }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: calc(100dvw - 200px);
+  backdrop-filter: blur(10px);
 }
 
 // .texte, .reponse {
@@ -125,6 +135,7 @@ body{
   h1{
     font-size: 90px;
     width: fit-content;
+    padding-top: 300px;
     margin: 0 auto;
     @include responsive ('tablet'){
       font-size: 64px;
@@ -168,11 +179,6 @@ body{
     }
   }
   
-  .link--header{
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
   .texte--contenu{
     width: fit-content;
     margin: 40px auto 50px;
@@ -181,6 +187,9 @@ body{
 
   @include responsive ('tablet'){
     font-size: 23px;
+  }
+  @include responsive ('mobile'){
+    font-size: 16px;
   }
   
   }
@@ -331,6 +340,7 @@ footer{
   .link{
     display: flex;
     align-content: center;
+    align-items: flex-start;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;

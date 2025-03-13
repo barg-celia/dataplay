@@ -9,8 +9,20 @@
     }
     .question{
         text-align: center;
+
         @include responsive ('tablet'){
             font-size: 20px;
+        }
+        @include responsive ('mobile'){
+            font-size: 14px;
+        }
+    }
+    .options {
+        @include responsive ('tablet'){
+            font-size: 20px;
+        }
+        @include responsive ('mobile'){
+            font-size: 14px;
         }
     }
 }
