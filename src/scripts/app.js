@@ -134,6 +134,25 @@ fetch('assets/json/data.json')
     });
   });
 
+  // Code ok pour ajouter/supprimer la classe actif des boutons 
+  
+  // Fonction pour gérer l'ajout et la suppression de la classe 
+  function setActiveButton(buttonClass) {
+  
+  const buttons = document.querySelectorAll('.btn');
+  
+  
+  buttons.forEach(button => {
+    button.classList.remove('btn__actif');
+  });
+  
+  // Ajouter la classe "btn__actif" au bouton cliqué
+  const activeButton = document.querySelector(buttonClass);
+  if (activeButton) {
+    activeButton.classList.add('btn__actif');
+  }
+}
+
 // Fonction pour afficher la consommation énergétique
 function displayEnergyConsumption(data) {
   let html = '';
