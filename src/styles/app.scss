@@ -1,23 +1,23 @@
 @import 'utils/variables';
-@import 'utils/common';
-@import 'utils/mixins';
 @import 'components/type';
+@import 'utils/common.scss';
+@import 'utils/mixins';
 @import 'components/calculs';
 @import 'components/datas.scss';
 @import 'components/quizz.scss';
 
 body{
-  margin-top: 0px;
-  padding: 0px;
-  font-size: 23px;
-  color: #ffffff;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1,4;
-}
-  
-.header{
-  margin: 180px auto 0;
-  height: 100vh;
+    margin-top: 0px;
+    padding: 0px;
+    font-size: 23px;
+    color: #ffffff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1,4;
+  }
+
+.link--header{
+  display: flex;
+  justify-content: space-evenly;
 
   &__links {
     /* Vous pouvez jouer avec le margin ici pour ajuster la position des boutons
@@ -34,6 +34,34 @@ body{
   margin: 2px auto;
 }
 
+.texte--contenu{
+  width: fit-content;
+  margin: 40px auto;
+  font-size: 32px;
+}
+
+.section1, .text-contenu {
+  width: fit-content;
+  margin: 40px auto;
+}
+
+.section1 p{
+  margin: 40px 0;
+}
+
+.section2{
+  background-color: $background-light;
+  width: 800px;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  border-radius: 20px;
+  margin: 40px auto 100px;
+  display: flex;
+  gap: 10px;
+  
+}
 
 .grid--div {
   display: flex;
@@ -41,6 +69,24 @@ body{
   align-items: center;
 }
 
+.btn--suivant, .btn__actif{
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius:10px 10px 0 0;
+  text-align: center;
+  margin: 0 auto;
+  width: fit-content;
+  height: 40px;
+}
+.btn--suivant:hover{
+  background-color: #838b83;
+}
+
+.btn--suivant{
+  border-radius: 10px;
+}
 
 .progress--container, .progress--container1{
   width: 100%;
