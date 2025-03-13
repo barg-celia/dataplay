@@ -1,7 +1,7 @@
 @import '../utils/mixins';
 
 .background-img {
-    background-image: url("../assets/images/rectangle.jpg");
+    background-image: url("../assets/images/rectangle@2x.jpg");
     position: fixed;  /* Fixe l'image en arrière-plan */
     background-size: cover;
     top: 0;
