@@ -276,10 +276,19 @@ footer{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     @include responsive ('tablet'){
-      height: 62px;
+      min-width : 110px;
+      height: 80px;
+      padding: 2px;
+      
   }
   @include responsive ('mobile'){
     height: 85px;
+  }
+  
+  @include responsive ('small mobile'){
+    max-width : 110px;
+    height: 90px;
+    padding: 2px;
   }
 
     &:hover{
@@ -300,7 +309,20 @@ footer{
     border-radius: 10px 10px 0 0;
     font-size: 16px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    @include responsive ('tablet'){
+      min-width : 110px;
+      height: 80px;
+      padding: 2px;
+    }
+
+    @include responsive ('small mobile'){
+      max-width : 110px;
+      height: 90px;
+      padding: 2px;
+    }
   }
+
   
   #data-container {
     margin-top: 40px;
