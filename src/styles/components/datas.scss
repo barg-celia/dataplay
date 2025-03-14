@@ -13,6 +13,9 @@
             height: fit-content;
             padding-bottom: 40px;
           }
+        @include responsive ('mobile'){
+            width: calc(100dvw - 40px);
+        }
           
         &__nav {
             display: flex;
@@ -55,7 +58,7 @@
     color: black;
     margin: 10px;
 }
-.btn--suivant, .btn__actif{
+.btn--suivant{
     padding: 10px 20px;
     border: none;
     cursor: pointer;
@@ -65,7 +68,6 @@
     width: fit-content;
     height: 40px;
 }
-
 .btn--suivant:hover{
     background-color: #838b83;
 }

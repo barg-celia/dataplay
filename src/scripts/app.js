@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
             <button class="btn--prochain">Suivant</button>
             <div class="progress--container1">
-                <div class="progress--bar1" style="width: ${(currentQuestionIndex / totalQuestions) * 100}%;"></div>
+                // <div class="progress--bar1" style="width: ${(currentQuestionIndex / totalQuestions) * 100}%;"></div>
             </div>
         `;
         // Gestion du bouton "Suivant"
