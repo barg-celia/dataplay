@@ -135,9 +135,11 @@ body{
     margin: 0 auto;
     @include responsive ('tablet'){
       font-size: 64px;
+      padding-top: 0;
     }
     @include responsive ('mobile'){
       font-size: 40px;
+      padding-top: 0;
     }
   }
   

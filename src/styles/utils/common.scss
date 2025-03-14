@@ -57,10 +57,9 @@
 
 .header__presentation{
     height: 100vh;
-    // margin-top: 300px;
 
     @include responsive ('tablet'){
-        margin: 200px auto 0 ;
+        margin: 100px auto 0 ;
         p{
             text-align: center;
             font-size: 23px;
@@ -70,7 +69,7 @@
         }
     } 
     @include responsive ('mobile'){
-        margin: 0 auto 0;
+        margin: 200px auto 0;
     }
 }
 
