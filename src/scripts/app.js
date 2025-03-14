@@ -121,6 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
                 // Masquer la sélection après le choix
                 document.querySelector('.choix').style.display = 'none';
+                document.querySelector('.card--text').style.display='none';
                 this.style.display = 'none';
             } else {
                 alert("Merci de sélectionner un réseau !");

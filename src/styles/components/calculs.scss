@@ -76,4 +76,8 @@
     align-items: center;
     // margin-bottom: 4rem;
     margin: 0 auto 4rem;
+
+    @include responsive ('mobile'){
+        margin-bottom: 2rem;
+    }
   }

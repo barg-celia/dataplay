@@ -47,6 +47,11 @@
 
     .card--text{
         margin-bottom: 6rem;
+
+        @include responsive ('mobile'){
+            margin-bottom: 2rem;
+            text-align: center;
+        }
     }
 }
 
