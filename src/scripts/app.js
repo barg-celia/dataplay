@@ -92,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let questionsData = [];
     let currentQuestionIndex = 0;
     let selectedNetwork = "";
+    let score = 0;
 
     // Gestion du clic sur les icônes
     document.querySelectorAll('.reseaux').forEach(reseau => {
@@ -115,12 +116,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 .then(response => response.json())
                 .then(data => {
                     questionsData = data[selectedNetwork];
-                    console.log(questionsData);
                     currentQuestionIndex = 0; // Réinitialiser l'index du quiz
                     displayQuestion(questionsData[currentQuestionIndex]);
                 });
                 // Masquer la sélection après le choix
                 document.querySelector('.choix').style.display = 'none';
+                this.style.display = 'none';
             } else {
                 alert("Merci de sélectionner un réseau !");
             }
@@ -153,31 +154,37 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
         // Gestion du bouton "Suivant"
         document.querySelector(".btn--prochain").addEventListener("click", function () {
-          function displayFinalMessage() {
-            let message = "";
-            if (score >= 16) {
-                message = "Bravo, tu es sur la bonne voie ! Tu as bien compris les enjeux et tu fais des choix éclairés. Continue ainsi pour un impact encore plus positif !";
-            } else if (score >= 10) {
-                message = "Tu es sur la bonne voie, un petit effort supplémentaire et ce sera parfait.";
-            } else {
-                message = "Oups, il semble que tu aies encore quelques notions à revoir ! Mais pas de panique, chaque erreur est une leçon pour avancer. Continue à t'informer !";
+            const selectedOption = document.querySelector('input[name="response"]:checked');
+            if (selectedOption) {
+                const responseKey = selectedOption.value;
+                score += question.impact[responseKey];
+                currentQuestionIndex++;
+                if (currentQuestionIndex < totalQuestions) {
+                    displayQuestion(questionsData[currentQuestionIndex]);
+                } else {
+                    displayFinalMessage();
+                }
+            }else {
+                alert("Merci de choisir une option !");
             }
-        
-            const card = document.querySelector(".card1");
-            card.innerHTML = `
-                <p class="final-message">Quiz terminé ! 🎉</p>
-                <p>Ton score : <strong>${score} / 20</strong></p>
-                <p>${message}</p>
-                <button class="btn--rejouer">Rejouer</button>
-            `;
-        
-            document.querySelector(".btn--rejouer").addEventListener("click", () => {
-                score = 0;
-                questionCount = 0;
-                displayRandomSituation(situationsData);
-            });
-        }
         })        
+    }
+    function displayFinalMessage() {
+        let message = `Cela équivaut à environ ${Math.round(score / 78)} km dans une voiture essence moyenne.`;
+    
+        const card = document.querySelector(".card1");
+        card.innerHTML = `
+            <p class="final-message">Quiz terminé ! 🎉</p>
+            <p>Ton score : <strong>${score} grammes de CO2 par an</strong></p>
+            <p>${message}</p>
+            <button class="btn--rejouer">Rejouer</button>
+        `;
+    
+        document.querySelector(".btn--rejouer").addEventListener("click", () => {
+            score = 0;
+            questionCount = 0;
+            displayRandomSituation(situationsData);
+        });
     }
 });
 // Récupérer les données JSON depuis le fichier
@@ -323,4 +330,4 @@ function addOrRemoveStickyClass() {
 }
 
 window.addEventListener('scroll', () => {addOrRemoveStickyClass()});
-window.addEventListener('resize', stickPosition = navbar.offsetTop);
+window.addEventListener('resize', () => {stickPosition = navbar.offsetTop});
