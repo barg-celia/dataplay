@@ -143,14 +143,14 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="options">
                 ${Object.entries(question.options).map(([key, option]) => 
                     `<label>
-                        <input type="radio" name="response" value="${key}">
+                        <input type="radio" class="square-radio" name="response" value="${key}">
                         ${option}
                     </label><br>`
                 ).join('')}
             </div>
             <button class="btn--prochain">Suivant</button>
             <div class="progress--container1">
-                // <div class="progress--bar1" style="width: ${(currentQuestionIndex / totalQuestions) * 100}%;"></div>
+                <div class="progress--bar1" style="width: ${(currentQuestionIndex / totalQuestions) * 100}%;"></div>
             </div>
         `;
         // Gestion du bouton "Suivant"
